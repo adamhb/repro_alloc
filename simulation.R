@@ -1,0 +1,55 @@
+library(tidyverse)
+
+sp <- c("A","B","C")
+sp.mass <- c(5,1,0.001)
+names(sp.mass) <- sp
+
+
+categories <- c("flower","seed","leaf")
+cat.multiplier <- c(.1,.3,.5)
+names(cat.multiplier) <- categories
+traps <- paste0("T",1:10)
+#10 traps
+
+
+## Idea 3 for approach 2
+mass.output <- numeric(90)
+sp.output <- character(90)
+trap.output <- character(90)
+cat.output <- character(90)
+rownumber <- 1
+
+for(s in sp) {
+  for(cat in categories) {
+    for(trap in traps) {
+      
+      sp.multiplier.t <- rnorm(1, sp.mass[sp], sd = 0.2) 
+      cat.multiplier.t <-  rnorm(1,cat.multiplier[cat],0.2)
+      mass.output[rownumber] <- sp.multiplier.t * cat.multiplier.t + rnorm(1,0,0.2)
+      
+      sp.output[rownumber] <- sp
+      trap.output[rownumber] <- trap
+      cat.output[rownumber] <- cat
+      
+      rownumber <- rownumber + 1
+    }
+  }
+}
+
+
+sim_data <- data.frame(mass = mass.output, sp = sp.output, trap = trap.output, cat = cat.output)
+
+
+sim_data %>% ggplot(aes(x = cat, y = mass)) +
+  geom_boxplot() 
+
+
+
+
+
+
+
+
+
+
+
