@@ -1,0 +1,100 @@
+"sp","type","mass","Freq"
+"alchco","flower",0,2
+"alchco","leaf",39.6,11
+"alchco","mature fruit",0.6,18
+"alsebl","flower",76.4,24
+"alsebl","immature fruit",3,15
+"alsebl","leaf",4483.8,53
+"alsebl","mature fruit",715.2,62
+"apeime","flower",7.2,3
+"apeime","immature fruit",4.6,1
+"apeime","leaf",889.9,23
+"apeime","mature fruit",33.2,4
+"beilpe","flower",29,7
+"beilpe","immature fruit",30.5,5
+"beilpe","leaf",1267.9,25
+"beilpe","mature fruit",294.2,15
+"brosal","flower",29.2,4
+"brosal","immature fruit",8.9,2
+"brosal","leaf",1391.3,45
+"brosal","mature fruit",59.8,7
+"cecrin","flower",1039.7,7
+"cecrin","immature fruit",6.5,3
+"cecrin","leaf",3400.3,24
+"cecrin","mature fruit",18.7,17
+"cordbi","flower",28.9,6
+"cordbi","immature fruit",29,6
+"cordbi","leaf",483.2,20
+"cordbi","mature fruit",150.3,38
+"guapst","flower",519.6,5
+"guapst","immature fruit",81.9,5
+"guapst","leaf",3875.6,23
+"guapst","mature fruit",35.5,19
+"guargu","flower",1.5,5
+"guargu","immature fruit",5.2,3
+"guargu","leaf",856.9,31
+"guargu","mature fruit",47.8,31
+"guatdu","flower",56.7,3
+"guatdu","immature fruit",0.5,1
+"guatdu","leaf",200.2,25
+"guatdu","mature fruit",10.9,37
+"gustsu","flower",467.7,6
+"gustsu","immature fruit",22.5,2
+"gustsu","leaf",989.8,6
+"gustsu","mature fruit",185.4,2
+"huracr","flower",319.2,6
+"huracr","immature fruit",0.9,1
+"huracr","leaf",2292.9,23
+"huracr","mature fruit",24.2,7
+"jac1co","flower",1209.6,28
+"jac1co","immature fruit",230.8,8
+"jac1co","leaf",3278.7,56
+"jac1co","mature fruit",1590.6,64
+"ocotwh","leaf",54.5,10
+"poular","flower",8.4,1
+"poular","leaf",813.8,11
+"poular","mature fruit",3.1,11
+"poutre","flower",477.5,8
+"poutre","immature fruit",43.6,2
+"poutre","leaf",3412.8,37
+"poutre","mature fruit",53.3,17
+"pri2co","flower",1119.6,27
+"pri2co","immature fruit",661.6,8
+"pri2co","leaf",5584.1,40
+"pri2co","mature fruit",955.6,7
+"protte","flower",12.8,11
+"protte","immature fruit",96.5,4
+"protte","leaf",1416.3,36
+"protte","mature fruit",145.1,21
+"quaras","flower",2151.2,28
+"quaras","immature fruit",233.6,13
+"quaras","leaf",7059.8,44
+"quaras","mature fruit",2326.6,55
+"simaam","flower",0,4
+"simaam","immature fruit",0.1,1
+"simaam","leaf",453.2,34
+"simaam","mature fruit",6.4,12
+"tab2ar","flower",53.9,16
+"tab2ar","immature fruit",5.1,1
+"tab2ar","leaf",2425.7,41
+"tab2ar","mature fruit",55.1,8
+"tet2pa","flower",207.4,10
+"tet2pa","immature fruit",48.2,4
+"tet2pa","leaf",2635.9,48
+"tet2pa","mature fruit",486,31
+"tri2tu","flower",59.1,23
+"tri2tu","immature fruit",109.6,16
+"tri2tu","leaf",3042.3,61
+"tri2tu","mature fruit",511.3,57
+"virose","flower",8.5,12
+"virose","immature fruit",0.2,2
+"virose","leaf",974.9,31
+"virose","mature fruit",99.8,21
+"virosu","flower",205.5,7
+"virosu","immature fruit",24.2,2
+"virosu","leaf",2276.6,21
+"virosu","mature fruit",347.1,19
+"zantbe","flower",96.3,2
+"zantbe","immature fruit",0,1
+"zantbe","leaf",589.1,20
+"zantbe","mature fruit",0,33
