@@ -1,0 +1,148 @@
+---
+title: "Repro_alloc_1"
+author: "R.Ward"
+date: "2/25/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The goal of this preliminary analysis is to look at the allocation to reproduction among BCI's most common species(in units of mass (carbon) per unit reproductive basal area) between PFTs.   We're interested in: 
+repro_allocation / allocation_leaves
+seed_allocation / repro_allocation
+
+Our PFTs are: drought tolerant and intolerant (dt/di) and early and late successional(es/ls).
+
+Adam HB has filtered BCI species list for those with greater than 50 reproductive individuals, giving us a list of 26 species. Joe Wright has extracted the summed reproductive output for these species from two sites, with 62 and 60 traps respectively.
+
+
+```{r}
+library(tidyverse)
+library(readr)
+library(skimr)
+```
+
+```{r}
+#this file contains the spp list and pfts for the 26 spp identified with more than 50 repro individuals
+species_list_26 <- read_csv("species_list_for_repro_alloc_26_mostabund_sp.csv", col_types = cols(
+  sp = col_character(),
+  Latin = col_character(),
+  dmax = col_double(),
+  wsg = col_double(),
+  e_vs_l = col_factor(),
+  dpft = col_factor(),
+  repro_abund_2010 = col_double(),
+  pft = col_factor()
+))
+head(species_list_26)
+
+```
+
+This file sums 62 traps in the 50 ha plot for which masses were recorded from 25 June 2013 through 29 January 2019:
+```{r}
+mass_data_50haplot <- read_csv("Hanbury_Brown_50ha_20190221.csv", col_types = cols(
+                                                                                      sp = col_character(), 
+                                                                                      type = col_factor(), 
+                                                                                      mass = col_double(),
+                                                                                      Freq = col_double()
+                                                                                      )
+                                        )
+
+skim(mass_data_50haplot)
+
+```
+
+
+
+This file sums 60 traps from a second site (Poacher's Peninsula??) from 25 Nov 1985 through 19 Feb 2018:
+
+```{r}
+mass_data_60traps<- read_csv("Hanbury_Brown_60traps_20190221.csv", col_types = cols(
+                                                                                      sp = col_character(), 
+                                                                                      type = col_factor(), 
+                                                                                      mass = col_double(),
+                                                                                      Freq = col_double()
+                                                                                      ))
+skim(mass_data_60traps)
+```
+
+
+I think that the second set of data (60 traps) is for Poacher's Peninsula. I'm not sure if we have repro. basal area outside of the 50ha plot, so I'm going to work with the 50-ha plot 62 trap data first. 
+First, going to attach the pfts to the dataframe...
+
+```{r}
+mass_50ha_with_pft <- mass_data_50haplot %>%
+                    left_join(species_list_26, by = "sp")
+head(mass_50ha_with_pft)
+skim(mass_50ha_with_pft)
+```
+
+Cool. Looks like that worked.
+
+Next, need the numbers from BCI traits: 
+
+```{r}
+bci_traits <- read_csv(file = "~/ESPM288/repro_alloc/BCITRAITS_20101220 (1).csv")
+head(bci_traits)
+
+```
+
+
+Not srue if this is necessary, but in case I want to use this as a key later, adding sp code w lowercase: 
+```{r}
+bci_traits %>%
+  mutate(sp = tolower(bci_traits$`SP$`))
+```
+
+
+Now to start thinking about functions: 
+For one species we have four potential categories:
+mature fruit (including seeds, entire fruit, capsules, and fruit damaged by vertebrates or insects)
+immature fruit
+leaves
+flowers
+
+We want to calculate: 
+C allocated to leaves 
+  per spp: we have this mass summed over 2013-2019 (7 years)
+  per pft: can sum masses of sp. in each pft (over 7 years)
+  
+  Options: 
+  units of mass per year (or 7 yr) for 62 traps
+  in units mass per year per 0.5m^2
+  scale to 50 ha 
+  do we have basal area of each sp to scale leaf production to basal area?
+  
+  
+C allocated to repro structures (mature fruit, immature fruit, flowers)
+  per spp: sum(mature fruit + immature + flowers) (over 7 years)
+          in sp. list doc have repro abund = number of reproductive individuals
+          
+  per pft: 
+  
+
+C allocated to seeds
+  per spp: 
+    mature fruit / bci_traits$FRUIT_DRY (for spp) = #mature fruit over 7 yers 62 traps w st.error
+    #mature fruit * bci_traits$N_SEEDFULL = #seeds over 7 yrs 62 traps w st error
+      Q: SEEDFULL and SEEDEMTY --> need to ask joe, but I think it makes sense for our purposes just to use the SEEDFULL numbers 
+    #seeds * bci_traits$SEED_DRY = mass seeds, 7 yrs, 62 traps
+    
+Then: need to scale to repro basal area
+    Per spp: total yearly output per 0.5m^2 * repro basal area 
+        Q: does repro basal area change significantly over the 7 years? Need to look at repro basal area data
+        
+        
+  
+
+```{r}
+#reminder for subsetting variables https://stats.idre.ucla.edu/r/modules/subsetting-data/
+#https://www.datacamp.com/community/tutorials/15-easy-solutions-data-frame-problems-r
+
+```
+
+
+
+
