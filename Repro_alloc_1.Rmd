@@ -9,11 +9,13 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-The goal of this preliminary analysis is to look at the allocation to reproduction among BCI's most common species(in units of mass (carbon) per unit reproductive basal area) between PFTs.   We're interested in: 
-repro_allocation / allocation_leaves
-seed_allocation / repro_allocation
+The goal of this preliminary analysis is to look at the allocation to reproduction among BCI's most common species(in units of mass per unit reproductive basal area) between PFTs.     
+We're interested in:   
 
-Our PFTs are: drought tolerant and intolerant (dt/di) and early and late successional(es/ls).
+repro_allocation / allocation_leaves  
+seed_allocation / repro_allocation  
+
+Our PFTs are: drought tolerant and intolerant (dt/di) and early and late successional(es/ls).  
 
 Adam HB has filtered BCI species list for those with greater than 50 reproductive individuals, giving us a list of 26 species. Joe Wright has extracted the summed reproductive output for these species from two sites, with 62 and 60 traps respectively.
 
@@ -38,26 +40,24 @@ species_list_26 <- read_csv("species_list_for_repro_alloc_26_mostabund_sp.csv", 
 ))
 head(species_list_26)
 
+#should e_vs_l, dpft, pft be factors? or characters? 
+
 ```
 
 This file sums 62 traps in the 50 ha plot for which masses were recorded from 25 June 2013 through 29 January 2019:
 ```{r}
-mass_data_50haplot <- read_csv("Hanbury_Brown_50ha_20190221.csv", col_types = cols(
-                                                                                      sp = col_character(), 
-                                                                                      type = col_factor(), 
-                                                                                      mass = col_double(),
-                                                                                      Freq = col_double()
+mass_data_50haplot <- read_csv("Hanbury_Brown_50ha_20190221.csv", col_types = cols(sp = col_character(), 
+                                                                                   type = col_factor(), 
+                                                                                   mass = col_double(),
+                                                                                   Freq = col_double())
                                                                                       )
-                                        )
-
 skim(mass_data_50haplot)
+head(mass_data_50haplot)
 
 ```
 
 
-
 This file sums 60 traps from a second site (Poacher's Peninsula??) from 25 Nov 1985 through 19 Feb 2018:
-
 ```{r}
 mass_data_60traps<- read_csv("Hanbury_Brown_60traps_20190221.csv", col_types = cols(
                                                                                       sp = col_character(), 
@@ -69,80 +69,106 @@ skim(mass_data_60traps)
 ```
 
 
-I think that the second set of data (60 traps) is for Poacher's Peninsula. I'm not sure if we have repro. basal area outside of the 50ha plot, so I'm going to work with the 50-ha plot 62 trap data first. 
-First, going to attach the pfts to the dataframe...
+Note: I think that the second set of data (60 traps) is for Poacher's Peninsula.    
+I'm not sure if we have repro basal area outside of the 50ha plot, so I'm going to work with the 50-ha plot 62 trap data first.   
+
+1. Attaching to mass dataframe:   
+- the pfts and other info from the species_list_26   
+- reproductive trait data from BCITRAITS
 
 ```{r}
-mass_50ha_with_pft <- mass_data_50haplot %>%
-                    left_join(species_list_26, by = "sp")
-head(mass_50ha_with_pft)
-skim(mass_50ha_with_pft)
-```
+bci_repro_traits <- read_csv(file = "~/ESPM288/repro_alloc/BCITRAITS_20101220 (1).csv") %>%
+                    mutate(sp = tolower(`SP$`)) %>%
+                    select(sp, FRUIT_DRY, N_SEEDFULL, SEED_DRY)
 
-Cool. Looks like that worked.
+bci_repro_traits 
+                    
+Data_50_ha <- mass_data_50haplot %>%
+                    left_join(species_list_26, by = "sp") %>%
+                    left_join(bci_repro_traits, by = "sp")
 
-Next, need the numbers from BCI traits: 
+#this df includes all categories (flower, leaf, im fruit, mat fruit) bci repro traits, pfts, and abund of repro individuals 
+Data_50_ha
 
-```{r}
-bci_traits <- read_csv(file = "~/ESPM288/repro_alloc/BCITRAITS_20101220 (1).csv")
-head(bci_traits)
-
-```
-
-
-Not srue if this is necessary, but in case I want to use this as a key later, adding sp code w lowercase: 
-```{r}
-bci_traits %>%
-  mutate(sp = tolower(bci_traits$`SP$`))
 ```
 
 
-Now to start thinking about functions: 
-For one species we have four potential categories:
-mature fruit (including seeds, entire fruit, capsules, and fruit damaged by vertebrates or insects)
-immature fruit
-leaves
-flowers
+2. Totalling reproductive mass for each species
+  - dividing mass to find reproductive output per reproductive individual
 
-We want to calculate: 
-C allocated to leaves 
-  per spp: we have this mass summed over 2013-2019 (7 years)
-  per pft: can sum masses of sp. in each pft (over 7 years)
-  
-  Options: 
-  units of mass per year (or 7 yr) for 62 traps
-  in units mass per year per 0.5m^2
-  scale to 50 ha 
-  do we have basal area of each sp to scale leaf production to basal area?
-  
-  
-C allocated to repro structures (mature fruit, immature fruit, flowers)
-  per spp: sum(mature fruit + immature + flowers) (over 7 years)
-          in sp. list doc have repro abund = number of reproductive individuals
-          
-  per pft: 
-  
+  NOTES: look at repro.basal area data
+  Need to: 
+  - Scale repro output to *repro basal area* BCI 
+  - Scale leaf output to area BCI
 
-C allocated to seeds
-  per spp: 
-    mature fruit / bci_traits$FRUIT_DRY (for spp) = #mature fruit over 7 yers 62 traps w st.error
-    #mature fruit * bci_traits$N_SEEDFULL = #seeds over 7 yrs 62 traps w st error
-      Q: SEEDFULL and SEEDEMTY --> need to ask joe, but I think it makes sense for our purposes just to use the SEEDFULL numbers 
-    #seeds * bci_traits$SEED_DRY = mass seeds, 7 yrs, 62 traps
-    
-Then: need to scale to repro basal area
-    Per spp: total yearly output per 0.5m^2 * repro basal area 
-        Q: does repro basal area change significantly over the 7 years? Need to look at repro basal area data
+  Alternatively? :
+  From census data, could get count of individuals (repro + not repro) and look at:
+        repro_mass_output/repro_individuals = repro mass per indv
+        leaf_output/all_indv = leaf mass per indv
+        repro mass per indv / leaf mass per indiv
         
-        
-  
+```{r}
+#filtering for repro structures from repro data, summing for total repro mass per sp, and per reproductive individuals of that sp
+repro_total_df <- Data_50_ha %>%
+                    filter(type != "leaf") %>%
+                    group_by(sp)%>%
+                    mutate(repro_mass_total = sum(mass)) %>%
+                    mutate(repro_mass_per_indv = repro_mass_total / repro_abund_2010)%>%
+                    select(sp, type, repro_mass_total, repro_mass_per_indv)
+repro_total_df
+
+#joining the reproductive df with full df for 50 ha plot 
+Data_50_ha <- Data_50_ha %>%
+                      left_join(repro_total_df, by = c("sp", "type"))
+#testing
+Data_50_ha
+```
+
+3. Cacluating expected values for:  
+- number of fruit (extrapolated from mature fruit mass using BCI trait values)
+- number of seeds
+- mass of seeds
+- fraction of total reproductive output that is seed
 
 ```{r}
-#reminder for subsetting variables https://stats.idre.ucla.edu/r/modules/subsetting-data/
-#https://www.datacamp.com/community/tutorials/15-easy-solutions-data-frame-problems-r
+#filtering for mature fruit, calculating expected values for fruit mass, seed #, seed mass, seed_mass/repro_mass
+repro_seeds_df <- Data_50_ha %>%
+                    filter(type == "mature fruit") %>%
+                    mutate(n_fruit_total = repro_mass_total / FRUIT_DRY) %>%
+                    mutate(n_seeds_total = n_fruit_total * N_SEEDFULL) %>%
+                    mutate(seed_mass_total = n_seeds_total * SEED_DRY) %>%
+                    mutate(seeds_fraction_of_repro = seed_mass_total / repro_mass_total) %>%
+                    select(sp, type, n_fruit_total, n_seeds_total, seed_mass_total, seeds_fraction_of_repro)
 
+############NEED TO CALC SE HERE
+repro_seeds_df
+#joining this with main df, Data_50_ha
+
+Repro_data_50_ha <- Data_50_ha %>%
+                    left_join(repro_seeds_df, by = c("sp", "type"))
+#this includes all of the above calulated values for each category for each species
+Repro_data_50_ha
 ```
 
 
+4. Next steps: 
+- scale to reproductive area (repro values) and all area bci (leaves)
+- calcualte error on repro mass estimates
+- group by pfts and summarize 
+- use (1 or 2 way?) ANOVA ? to look at differences between pfts!!
+
+
+Other notes for myself: 
+  - fractions can be left alone, 7 years x 60 0.5m2 on top & bottom
+  - other repro and leaf output values need to be put into units to scale 
+        
+reminder for subsetting variables https://stats.idre.ucla.edu/r/modules/subsetting-data/
+https://www.datacamp.com/community/tutorials/15-easy-solutions-data-frame-problems-r
+https://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise
+     
+
+
+  
+  
 
 
