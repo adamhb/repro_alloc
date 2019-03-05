@@ -1,0 +1,68 @@
+---
+title: "repro_basal_area"
+author: "R.Ward"
+date: "3/4/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(readr)
+library(skimr)
+```
+
+```{r}
+Dataset1_BCIseedproduction <- read_csv("Dataset1_BCIseedproduction.csv")
+View(Dataset1_BCIseedproduction)
+skim(Dataset1_BCIseedproduction)
+```
+
+```{r}
+repro_basal_area <- Dataset1_BCIseedproduction %>%
+                    mutate(sp = species) %>%
+                    mutate(RBA_units_m2 = RBA_2012/1000000) %>%
+                    select(sp, RBA_2012, RBA_units_m2)
+head(repro_basal_area)
+
+```
+
+Trying to look at change in RBA per sp over time: 
+```{r}
+RBA_change_by_sp_test <- Dataset1_BCIseedproduction %>%
+                          select(species, RBA_1993:RBA_2012)
+head(RBA_change_by_sp_test)
+#cool that limited df to just RBA_year values
+
+RBA_change_by_year_df <- RBA_change_by_sp_test %>%
+   column_to_rownames(var = "species") %>%
+   t() %>%
+   data.frame() %>%
+   rownames_to_column(var = "RBA_year") %>%
+   mutate(year = 1993:2012)
+
+head(RBA_change_by_year_df)
+skim(RBA_change_by_year_df)
+```
+
+
+```{r}
+ggplot(data = RBA_change_by_year_df, aes(x = year, y = alsebl)) + geom_line()
+```
+Just out of curiosity...
+
+```{r}
+library("reshape2")
+library("ggplot2")
+
+test_data_long <- melt(RBA_change_by_year_df, id = "year")  # convert to long format
+
+ggplot(data = test_data_long,
+       aes(x = year, y = value, colour = variable)) +
+       geom_point()
+#oh wow. no time to play with this right now.
+```
+
