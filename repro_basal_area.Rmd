@@ -22,11 +22,11 @@ skim(Dataset1_BCIseedproduction)
 ```
 
 ```{r}
-repro_basal_area <- Dataset1_BCIseedproduction %>%
+RBA <- Dataset1_BCIseedproduction %>%
                     mutate(sp = species) %>%
                     mutate(RBA_units_m2 = RBA_2012/1000000) %>%
                     select(sp, RBA_2012, RBA_units_m2)
-head(repro_basal_area)
+head(RBA)
 
 ```
 
@@ -64,5 +64,66 @@ ggplot(data = test_data_long,
        aes(x = year, y = value, colour = variable)) +
        geom_point()
 #oh wow. no time to play with this right now.
+```
+
+Looking at missing values in this dataset when matched with our sp list 
+Note: RBA_2012 values are in units mm2, I am creating a new column to hold RBA in units m2
+
+```{r}
+Dataset1_BCIseedproduction <- read_csv("Dataset1_BCIseedproduction.csv")
+#view(Dataset1_BCIseedproduction)
+RBA <- Dataset1_BCIseedproduction %>%
+                    mutate(sp = species) %>%
+                    mutate(RBA_units_m2 = RBA_2012/1000000) %>%
+                    select(sp, RBA_2012, RBA_units_m2)
+head(RBA)
+
+sp_missing_RBA <- species_list_26 %>%
+    left_join(RBA, by = "sp") %>%
+    select(sp, e_vs_l, dpft, pft, RBA_2012)
+
+skim(sp_missing_RBA)
+
+sp_missing_RBA %>%
+  group_by(e_vs_l) %>%
+  count(RBA_2012 == "NA")
+
+sp_missing_RBA %>%
+  group_by(dpft) %>%
+  count(RBA_2012 == "NA")
+
+sp_missing_RBA %>%
+  group_by(pft) %>%
+  count(RBA_2012 == "NA")
+```
+
+
+Looking at values from the files Adam HB sent...
+
+```{r}
+#units - m2? year?
+repro_basal_area <- read_csv("repro_basal_area_df.csv") %>%
+                    select(sp, r_ba)
+head(repro_basal_area)
+skim(repro_basal_area)
+
+#this is from 2010, units are in m2?
+basal_area <- read_csv("basal_area_2010.csv") %>%
+              select(sp, ba)
+head(basal_area)
+skim(basal_area)
+
+ba_rba <- repro_basal_area %>%
+          left_join(basal_area, by = "sp")
+head(ba_rba)
+```
+
+Let's see if we have ba and rba values for all of the sp in our list: 
+
+```{r}
+species_list_26 %>%
+  left_join(ba_rba, by = "sp") %>%
+  is.na()
+#no missing values
 ```
 

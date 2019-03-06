@@ -17,15 +17,18 @@ seed_allocation / repro_allocation
 
 Our PFTs are: drought tolerant and intolerant (dt/di) and early and late successional(es/ls).  
 
-Adam HB has filtered BCI species list for those with greater than 50 reproductive individuals, giving us a list of 26 species. Joe Wright has extracted the summed reproductive output for these species from two sites, with 62 and 60 traps respectively.
+Adam HB has filtered BCI species list for those with greater than 50 reproductive individuals, giving us a list of 26 species.   
 
+Joe Wright has extracted the summed reproductive output for these species from two sites, with 62 and 60 traps respectively.
 
 ```{r}
 library(tidyverse)
 library(readr)
 library(skimr)
 ```
+
 1.  Importing sp. list  
+
 ```{r}
 #this file contains the spp list and pfts for the 26 spp identified with more than 50 repro individuals
 species_list_26 <- read_csv("species_list_for_repro_alloc_26_mostabund_sp.csv", col_types = cols(
@@ -75,6 +78,7 @@ I'm not sure if we have repro basal area outside of the 50ha plot, so I'm going 
 
 4. BCI trait data  
 - First, extracting reproductive trait data from BCITRAITS 
+- Units are in g
 
 ```{r}
 bci_repro_traits <- read_csv("BCITRAITS_20101220 (1).csv") %>%
@@ -86,92 +90,115 @@ bci_repro_traits <- read_csv("BCITRAITS_20101220 (1).csv") %>%
 head(bci_repro_traits) 
 ```
 
-5. Extracting repro. basal area data
- - For this preliminary analysis, I'm using the most recent reproductive basal area estimate (year = 2012) (see repro_basal_area.rmd)
- - RBA_2012 values are in units mm2, I am creating a new column to hold RBA in units m2
- - Checking to see if we have repro basal area esimates for all sp in our sp list
+5. Extracting repro. basal area per sp (50 ha plot) data
+ - In seed production dataset most recent repro basal area estimates are from 2012. (see repro_basal_area.rmd)
+ - This data set doesn't have repro basal area esimates for all sp in our sp list
+ - I'm going to use repro basal area values sent to me by Adam HB, which has values for all of our sp.
+ - Need to double check with ABH - year and units (probably 2010, m2)
+ 
+6. Extracting basal area per sp (50 ha plot) (to later extrapolate leaf litter to the 50-ha plot)
+
+ 
 ```{r}
-Dataset1_BCIseedproduction <- read_csv("Dataset1_BCIseedproduction.csv")
-#view(Dataset1_BCIseedproduction)
-repro_basal_area <- Dataset1_BCIseedproduction %>%
-                    mutate(sp = species) %>%
-                    mutate(RBA_units_m2 = RBA_2012/1000000) %>%
-                    select(sp, RBA_2012, RBA_units_m2)
-head(repro_basal_area)
+# basal area is from 2010
+# repro basal area is from ????
+# units are in m2 - CHECK THIS
+basal_area <- read_csv("basal_area_2010.csv") %>%
+              select(sp, ba)
+head(basal_area)
+skim(basal_area)
 
-sp_missing_RBA <- species_list_26 %>%
-    left_join(repro_basal_area, by = "sp") %>%
-    select(sp, e_vs_l, dpft, pft, RBA_2012)
+ba_rba <- repro_basal_area %>%
+          left_join(basal_area, by = "sp")
+head(ba_rba)
 
-skim(sp_missing_RBA)
-```
+sp_list_with_ba_rba <- species_list_26 %>%
+                        left_join(ba_rba, by = "sp")
+skim(sp_list_with_ba_rba)
+head(sp_list_with_ba_rba)
 
-- We're missing RBA values for 12 species
-```{r}
-sp_missing_RBA %>%
-  group_by(e_vs_l) %>%
-  count(RBA_2012 == "NA")
-
-sp_missing_RBA %>%
-  group_by(dpft) %>%
-  count(RBA_2012 == "NA")
-
-sp_missing_RBA %>%
-  group_by(pft) %>%
-  count(RBA_2012 == "NA")
-```
-
-6. Total basal area per species (to later extrapolate leaf litter to the 50-ha plot)
-```{r}
 
 ```
 
 
-7. Joining availible trait data, basal area data, and sp list data into 1 dataframe for 50 ha plot (62 traps, .5m2)
+7. Joining availible trait data (g), basal area data (m2), and sp list data into 1 dataframe for 50 ha plot (62 traps, .5m2)
 
 ```{r}
+mass_data_50haplot
 Data_50_ha <- mass_data_50haplot %>%
                     left_join(species_list_26, by = "sp") %>%
                     left_join(bci_repro_traits, by = "sp") %>%
-                    left_join(repro_basal_area, by = "sp")
+                    left_join(ba_rba, by = "sp")
 
-#this df includes all categories (flower, leaf, im fruit, mat fruit), bci repro traits, repro abund, pfts 
+#this df includes all categories (flower, leaf, im fruit, mat fruit), bci repro traits, repro ba, total ba, pfts 
 
 skim(Data_50_ha)
+head(Data_50_ha)
 
 ```
 
-8. Totalling reproductive mass for each species
-  - dividing mass by 7 to find a yearly average
+8. Scaling reproductive output and leaf output for each species
+  - dividing to find a yearly average (our mass data sums 25 June 2013 through 29 January 2019 = 67 months; mass/67  * 12 = avg per yr)
   - dividing yearly mass by 62 to find a trap average
   - scaling repro output (per trap, or 0.5m2) to repro basal area on BCI's 50 ha plot 
   
 
-
-        
 ```{r}
 #filtering for repro structures from repro data, summing for total repro mass per sp, and per reproductive individuals of that sp
 repro_total_df <- Data_50_ha %>%
                     filter(type != "leaf") %>%
                     group_by(sp)%>%
                     mutate(repro_mass_total = sum(mass)) %>%
-                    mutate(repro_mass_per_yr = repro_mass_total/7) %>%
+                    mutate(repro_mass_per_yr = repro_mass_total * 12 / 67) %>%
                     mutate(repro_mass_per_yr_trap = repro_mass_per_yr/62) %>%
                     mutate(repro_mass_per_yr_indv = repro_mass_per_yr / repro_abund_2010) %>%
-                    mutate(repro_output_50_ha = (2 * repro_mass_per_yr_trap * RBA_units_m2)) %>%
+                    mutate(repro_output_50_ha = (2 * repro_mass_per_yr_trap * r_ba)) %>%
                     select(sp, type, repro_mass_total, repro_mass_per_yr_indv, repro_mass_per_yr, repro_mass_per_yr_trap, repro_output_50_ha)
 
-#for "repro_output_50_ha", traps are in g/0.5m2, RBA units are in m2, reult is in g/yr output for reproductive basal area
+#for "repro_output_50_ha", traps are in g/0.5m2, r_ba units are in m2 of 50-ha plot, reult is in g/yr output for repro basal area of 50-ha plot
 
 repro_total_df
 
-#joining the reproductive df with full df for 50 ha plot 
-Data_50_ha_1 <- Data_50_ha %>%
-                      left_join(repro_total_df, by = c("sp", "type"))
-#testing
-Data_50_ha_1 
+leaf_total_df <- Data_50_ha %>%
+                 filter(type == "leaf") %>%
+                 group_by(sp) %>%
+                 mutate(leaf_mass_per_yr = mass * 12 / 67) %>%
+                 mutate(leaf_mass_per_yr_trap = leaf_mass_per_yr/ 62) %>%
+                 mutate(leaf_output_50_ha = (2 * leaf_mass_per_yr_trap * ba)) %>%
+                 select(sp, type, leaf_mass_per_yr, leaf_mass_per_yr_trap, leaf_output_50_ha)
 
-              
+
+leaf_total_df
+#joining the reproductive df and leaf df with full df for 50 ha plot 
+
+Data_50_ha_1 <- Data_50_ha %>%
+                      left_join(repro_total_df, by = c("sp", "type")) %>%
+                      left_join(leaf_total_df, by = c("sp", "type"))
+                      
+                      
+#testing
+Data_50_ha_1
+
+
+repro_output_per_sp <- Data_50_ha_1 %>%
+                       filter(type == "mature fruit") %>%
+                       select(sp, repro_output_50_ha)
+  
+leaf_output_per_sp <- Data_50_ha_1 %>%
+                      filter(type == "leaf") %>%
+                      select(sp, leaf_output_50_ha)
+
+frac_repro_output_df <- leaf_output_per_sp %>%
+                        left_join(repro_output_per_sp, by = "sp") %>%
+                        mutate(frac_repro_output = repro_output_50_ha / leaf_output_50_ha) %>%
+                        select(sp, frac_repro_output)
+
+Data_50_ha_2 <- Data_50_ha_1 %>%
+                left_join(frac_repro_output_df, by = "sp")
+#testing
+
+Data_50_ha_2
+
 ```
 
 9. Cacluating expected values for:  
@@ -184,7 +211,7 @@ NOTE: there are no SE values for reproductive traits in BCITRAITS data
 
 ```{r}
 #filtering for mature fruit, calculating expected values for fruit mass, seed #, seed mass, seed_mass/repro_mass
-repro_seeds_df <- Data_50_ha_1 %>%
+repro_seeds_df <- Data_50_ha_2 %>%
                     filter(type == "mature fruit") %>%
                     mutate(n_fruit_total = mass / FRUIT_DRY) %>%
                     mutate(n_seeds_total = n_fruit_total * N_SEEDFULL) %>%
@@ -194,20 +221,26 @@ repro_seeds_df <- Data_50_ha_1 %>%
 
 repro_seeds_df
 
-#joining this with main df, Data_50_ha
+#joining this with main df, Data_50_ha_1
 
-Repro_data_50_ha <- Data_50_ha_1 %>%
+Repro_data_50_ha <- Data_50_ha_2 %>%
                     left_join(repro_seeds_df, by = c("sp", "type"))
 #this includes all of the above calulated values for each category for each species
 Repro_data_50_ha
+view(Repro_data_50_ha)
+
 ```
 
 
-10. Summarizing by pfts where we have availible data: 
+10. Summarizing by pfts: 
 
 ```{r}
 
+
 ```
+
+
+
 
 
 
@@ -215,9 +248,10 @@ Repro_data_50_ha
 
 
  Next steps: 
-- scale leaf output to basal area area bci (to calc 50-ha repro_output/leaf_output ratio)
 - group by pfts and summarize 
 - Look at differences between pfts
+
+
 
 
 
