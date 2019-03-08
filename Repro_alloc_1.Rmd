@@ -229,6 +229,7 @@ Repro_data_50_ha <- Data_50_ha_2 %>%
 Repro_data_50_ha
 view(Repro_data_50_ha)
 
+
 ```
 
 
@@ -236,22 +237,80 @@ view(Repro_data_50_ha)
 
 ```{r}
 
+#Looking at: repro / leaf 
 
+head(frac_repro_output_df)
+
+#graphing pfts
+frac_repro_output_df %>%
+        left_join(species_list_26, by = "sp") %>%
+        group_by(pft) %>%
+        ggplot(aes(pft, frac_repro_output)) + geom_boxplot()
+  
+#summarizing by pft
+frac_repro_output_df %>%
+        left_join(species_list_26, by = "sp") %>%
+        group_by(pft) %>%
+        summarize(per_pft_frac_repro_output = mean(frac_repro_output, na.rm = TRUE),
+            se = sd(frac_repro_output, na.rm = T)/length(frac_repro_output))
+
+#graphing e vs l
+frac_repro_output_df %>%
+        left_join(species_list_26, by = "sp") %>%
+        group_by(e_vs_l) %>%
+        ggplot(aes(e_vs_l, frac_repro_output)) + geom_boxplot()
+
+#graphing dt vs di
+frac_repro_output_df %>%
+        left_join(species_list_26, by = "sp") %>%
+        group_by(dpft) %>%
+        ggplot(aes(dpft, frac_repro_output)) + geom_boxplot()
+
+
+#Looking at seeds / repro 
+repro_seeds_df %>%
+    select(sp, seeds_fraction_of_repro) %>%
+    left_join(species_list_26, by = "sp") %>%
+    select(sp, pft, e_vs_l, dpft, seeds_fraction_of_repro)
+
+#graphing pft
+repro_seeds_df %>%
+        left_join(species_list_26, by = "sp") %>%
+        group_by(pft) %>%
+        ggplot(aes(pft, seeds_fraction_of_repro)) + geom_boxplot()
+
+#summarizing by pft
+repro_seeds_df %>%
+        left_join(species_list_26, by = "sp") %>%
+        group_by(pft) %>%
+        summarize(per_pft_seed_frac_repro = mean(seeds_fraction_of_repro, na.rm = T), 
+                  se = sd(seeds_fraction_of_repro, na.rm = T)/length(seeds_fraction_of_repro))
+   
+#graphing e_vs_l
+repro_seeds_df %>%
+        left_join(species_list_26, by = "sp") %>%
+        group_by(e_vs_l) %>%
+        ggplot(aes(e_vs_l, seeds_fraction_of_repro)) + geom_boxplot()
+
+#graphing dt vs di
+repro_seeds_df %>%
+        left_join(species_list_26, by = "sp") %>%
+        group_by(dpft) %>%
+        ggplot(aes(dpft, seeds_fraction_of_repro)) + geom_boxplot()
+
+                
 ```
 
 
 
 
+Next steps: 
 
+1. Identify missing values & associated types
+2. Diaspers?
+3. Estimates of fruit/seed losses
 
-
-
-
- Next steps: 
-- group by pfts and summarize 
-- Look at differences between pfts
-
-
+  
 
 
 
