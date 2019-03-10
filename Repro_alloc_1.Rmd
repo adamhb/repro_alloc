@@ -109,7 +109,6 @@ mass_data_50haplot <- read_csv("Hanbury_Brown_50ha_20190221.csv", col_types = co
                                                                                       )
 skim(mass_data_50haplot)
 head(mass_data_50haplot)
-
 ```
 
 6. Scaling: 
@@ -168,9 +167,15 @@ Repro_trait_data <- sp_traits %>%
 head(Repro_trait_data)
 skim(Repro_trait_data)
 
+outliers<- Repro_trait_data %>%
+   filter(frac_repro_output >= 1.0) %>%
+   select(sp, repro_mass_per_yr_m2, ba, r_ba, repro_output_50_ha, leaf_output_50_ha, frac_repro_output)
+
+outliers
+
 #the sp quaras seems to have an error in basal area or reproductive basal area measure
 #basal area is reported as 120.8 m2, reproductive basal area is reported as 0.91 m2
-#Quaras mature fruit mass = 2326.6, it seems unlikely repro basal area is only .9
+#Quaras repro_output per year per m2 = 27.22g, it seems unlikely repro basal area is only .9
 #the resulting fraction of repro_output / leaf_output = 87
 #removed quaras from below boxplots
 
@@ -179,9 +184,23 @@ Repro_trait_data %>%
         filter(sp != "quaras") %>%
         ggplot(aes(pft, frac_repro_output)) + geom_boxplot()
 
+
+#arbitrarily expluding potential outliers, where frac_repro_output was greater than 1.5
+#even exluding these, the average frac of repro_output/leaf_litter_output >> 0.1
+
+Repro_trait_data %>%
+        group_by(pft) %>%
+        filter(frac_repro_output < 1.5) %>%
+        ggplot(aes(pft, frac_repro_output)) + geom_boxplot()
+
 Repro_trait_data %>%
         group_by(e_vs_l) %>%
         filter(sp != "quaras") %>%
+        ggplot(aes(e_vs_l, frac_repro_output)) + geom_boxplot()
+
+Repro_trait_data %>%
+        group_by(e_vs_l) %>%
+        filter(frac_repro_output < 1.5) %>%
         ggplot(aes(e_vs_l, frac_repro_output)) + geom_boxplot()
 
 Repro_trait_data %>%
