@@ -1,7 +1,7 @@
 ---
- title: "Repro_alloc_1"
+title: "Repro_alloc_1"
 author: "R.Ward"
-date: "3/8/2019"
+date: "3/10/2019"
 output: html_document
 ---
 
@@ -14,7 +14,8 @@ The goal of this preliminary analysis is to look at the allocation to reproducti
 
 We're interested in:   
 
-repro_output / leaf_litter_output
+repro_output / leaf_litter_output  
+
 seed_ouput / repro_output  
 
 Our PFTs are: drought tolerant and intolerant (dt/di) and early and late successional(es/ls).  
@@ -116,19 +117,19 @@ head(mass_data_50haplot)
 6. Scaling: 
 Reproductive mass:
 - Our mass value is a sum of reproductive output from 25 June 2013 through 29 January 2019 (67 months)
-- Reproductive output per year =  $ R_{mass} / 67_{mo} * 12_{mo} / year = R_{mass} / year $
+- Reproductive output per year =  $R_{mass} / 67_{mo} * 12_{mo} / year = R_{mass} / year$
 - Mass per m2 for 62 0.5m2 traps = $R_{mass}/ 31 m^2$
 - Reproductive mass per m2 scaled to the 50 ha plot by sp reproductive basal area = $R_{mass} / m^2 * 500,000 m^2 * 1/ BA_{R} (m^2)$
 
-Leaf litter mass: 
-- Leaf litter output per year per year = $ L_{mass} / 67_{mo} * 12_{mo} / year = L_{mass} / year $
-- Mass per m2 for 62 0.5m2 traps = $L_{mass}/ 31 m^2$
-- Leaf litter mass per m2 scaled to the 50 ha plot by sp total basal area = $L_{mass} / m^2 * 500,000 m^2 * 1/ BA m^2)$
+Leaf litter mass:   
+- Leaf litter output per year per year = $L_{mass} / 67_{mo} * 12_{mo} / year = L_{mass} / year$  
+- Mass per m2 for 62 0.5m2 traps = $L_{mass}/ 31 m^2$  
+- Leaf litter mass per m2 scaled to the 50 ha plot by sp total basal area = $L_{mass} / m^2 * 500,000 m^2 * 1/ BA m^2)$ 
 
 
 ```{r}
 repro_total_df <- mass_data_50haplot %>%
-                  left_join(Repro_trait_data, by = "sp") %>%
+                  left_join(sp_traits, by = "sp") %>%
                   filter(type != "leaf") %>%
                   group_by(sp)%>%
                   mutate(repro_mass_total = sum(mass)) %>%
@@ -144,7 +145,7 @@ repro_total_df <- mass_data_50haplot %>%
 repro_total_df
 
 leaf_total_df <- mass_data_50haplot %>%
-                 left_join(Repro_trait_data, by = "sp") %>%
+                 left_join(sp_traits, by = "sp") %>%
                  filter(type == "leaf") %>%
                  group_by(sp) %>%
                  mutate(leaf_mass_per_yr = mass * 12 / 67) %>%
@@ -207,7 +208,8 @@ repro_seeds_df <- Repro_trait_data %>%
                   mutate(expd_seed_mass = ((mature_frt_mass/ FRUIT_DRY) * N_SEEDFULL * SEED_DRY)) %>%
                   mutate(fract_seed_of_repro = expd_seed_mass / repro_mass_total)
 
-repro_seeds_df
+head(repro_seeds_df)
+skim(repro_seeds_df)
 
 #graphing pft
 repro_seeds_df %>%
@@ -231,9 +233,9 @@ repro_seeds_df %>%
         ggplot(aes(dpft, fract_seed_of_repro)) + geom_boxplot()
 ```
 
-Next steps: 
-1. Find/estimate missing values for bci traits (perhaps from similar sp, if not availibe from J. Wright)
-2. Add additional sp. if possible (esp for underrepresended PFTs in this 26 sp sample)
-3. Correct biases:
-- losses to herbivory (ask J Wright for guidance here)
-- sp biased with respect to spatial sampling
+Next steps:     
+1. Find/estimate missing values for bci traits (perhaps from similar sp, if not availibe from J. Wright)  
+2. Add additional sp. if possible (esp for underrepresended PFTs in this 26 sp sample)  
+3. Correct biases:  
+- losses to herbivory (ask J Wright for guidance here)  
+- sp biased with respect to spatial sampling  
