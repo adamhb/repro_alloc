@@ -18,11 +18,9 @@ repro_output / leaf_litter_output
 
 seed_ouput / repro_output  
 
-Our PFTs are: drought tolerant and intolerant (dt/di) and early and late successional(es/ls).  
-
-Adam HB has filtered BCI species list for those with greater than 50 reproductive individuals, giving us a list of 26 species.   
-
-Joe Wright has extracted the summed reproductive output for these species from two sites, with 62 and 60 traps respectively.
+Our PFTs are: drought tolerant and intolerant (dt/di) and early and late successional(es/ls).    
+- Adam HB has filtered BCI species list for those with greater than 50 reproductive individuals, giving us a list of 26 species.     
+- Joe Wright has extracted the summed reproductive output for these species from two sites, with 62 and 60 traps respectively.  
 
 ```{r}
 library(tidyverse)
@@ -87,7 +85,7 @@ sp_traits <- species_list_26 %>%
                     left_join(b_area, by = "sp") %>%
                     left_join(rb_area, by = "sp")
 
-
+head(sp_traits)
 skim(sp_traits)
 
 #From the skim, note there are 5 sp for which BCI traits is missing trait values
@@ -162,14 +160,12 @@ leaf_total_df
 7. Joining all sp specific trait data: 
 ```{r}
     
-Repro_trait_data <- species_list_26 %>%
-                    left_join(bci_repro_traits, by = "sp") %>%
-                    left_join(b_area, by = "sp") %>%
-                    left_join(rb_area, by = "sp") %>%
+Repro_trait_data <- sp_traits %>%
                     left_join(repro_total_df, by = "sp") %>%
                     left_join(leaf_total_df, by = "sp") %>%
                     mutate(frac_repro_output = repro_output_50_ha / leaf_output_50_ha)
-                    
+
+head(Repro_trait_data)
 skim(Repro_trait_data)
 
 #the sp quaras seems to have an error in basal area or reproductive basal area measure
