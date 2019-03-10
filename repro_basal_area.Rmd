@@ -102,10 +102,12 @@ Looking at values from the files Adam HB sent...
 
 ```{r}
 #units - m2? year?
+
+#YES, units are m2 , in 1 year
 repro_basal_area <- read_csv("repro_basal_area_df.csv") %>%
                     select(sp, r_ba)
 head(repro_basal_area)
-skim(repro_basal_area)
+
 
 #this is from 2010, units are in m2?
 basal_area <- read_csv("basal_area_2010.csv") %>%
@@ -116,14 +118,16 @@ skim(basal_area)
 ba_rba <- repro_basal_area %>%
           left_join(basal_area, by = "sp")
 head(ba_rba)
+skim(ba_rba)
 ```
 
 Let's see if we have ba and rba values for all of the sp in our list: 
 
 ```{r}
-species_list_26 %>%
-  left_join(ba_rba, by = "sp") %>%
-  is.na()
+sp_list_w_ba <- species_list_26 %>%
+                left_join(ba_rba, by = "sp") 
+sp_list_w_ba %>%
+   is.na()
 #no missing values
 ```
 
