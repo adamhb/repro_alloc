@@ -1,0 +1,133 @@
+---
+title: "repro_basal_area"
+author: "R.Ward"
+date: "3/4/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(readr)
+library(skimr)
+```
+
+```{r}
+Dataset1_BCIseedproduction <- read_csv("Dataset1_BCIseedproduction.csv")
+View(Dataset1_BCIseedproduction)
+skim(Dataset1_BCIseedproduction)
+```
+
+```{r}
+RBA <- Dataset1_BCIseedproduction %>%
+                    mutate(sp = species) %>%
+                    mutate(RBA_units_m2 = RBA_2012/1000000) %>%
+                    select(sp, RBA_2012, RBA_units_m2)
+head(RBA)
+
+```
+
+Trying to look at change in RBA per sp over time: 
+```{r}
+RBA_change_by_sp_test <- Dataset1_BCIseedproduction %>%
+                          select(species, RBA_1993:RBA_2012)
+head(RBA_change_by_sp_test)
+#cool that limited df to just RBA_year values
+
+RBA_change_by_year_df <- RBA_change_by_sp_test %>%
+   column_to_rownames(var = "species") %>%
+   t() %>%
+   data.frame() %>%
+   rownames_to_column(var = "RBA_year") %>%
+   mutate(year = 1993:2012)
+
+head(RBA_change_by_year_df)
+skim(RBA_change_by_year_df)
+```
+
+
+```{r}
+ggplot(data = RBA_change_by_year_df, aes(x = year, y = alsebl)) + geom_line()
+```
+Just out of curiosity...
+
+```{r}
+library("reshape2")
+library("ggplot2")
+
+test_data_long <- melt(RBA_change_by_year_df, id = "year")  # convert to long format
+
+ggplot(data = test_data_long,
+       aes(x = year, y = value, colour = variable)) +
+       geom_point()
+#oh wow. no time to play with this right now.
+```
+
+Looking at missing values in this dataset when matched with our sp list 
+Note: RBA_2012 values are in units mm2, I am creating a new column to hold RBA in units m2
+
+```{r}
+Dataset1_BCIseedproduction <- read_csv("Dataset1_BCIseedproduction.csv")
+#view(Dataset1_BCIseedproduction)
+RBA <- Dataset1_BCIseedproduction %>%
+                    mutate(sp = species) %>%
+                    mutate(RBA_units_m2 = RBA_2012/1000000) %>%
+                    select(sp, RBA_2012, RBA_units_m2)
+head(RBA)
+
+sp_missing_RBA <- species_list_26 %>%
+    left_join(RBA, by = "sp") %>%
+    select(sp, e_vs_l, dpft, pft, RBA_2012)
+
+skim(sp_missing_RBA)
+
+sp_missing_RBA %>%
+  group_by(e_vs_l) %>%
+  count(RBA_2012 == "NA")
+
+sp_missing_RBA %>%
+  group_by(dpft) %>%
+  count(RBA_2012 == "NA")
+
+sp_missing_RBA %>%
+  group_by(pft) %>%
+  count(RBA_2012 == "NA")
+```
+
+
+Looking at values from the files Adam HB sent...
+
+```{r}
+#units - m2? year?
+
+#YES, units are m2 , in 1 year
+repro_basal_area <- read_csv("repro_basal_area_df.csv") %>%
+                    select(sp, r_ba)
+head(repro_basal_area)
+
+
+#this is from 2010, units are in m2?
+basal_area <- read_csv("basal_area_2010.csv") %>%
+              select(sp, ba)
+head(basal_area)
+skim(basal_area)
+
+ba_rba <- repro_basal_area %>%
+          left_join(basal_area, by = "sp")
+head(ba_rba)
+skim(ba_rba)
+```
+
+Let's see if we have ba and rba values for all of the sp in our list: 
+
+```{r}
+sp_list_w_ba <- species_list_26 %>%
+                left_join(ba_rba, by = "sp") 
+sp_list_w_ba %>%
+   is.na()
+#no missing values
+```
+
