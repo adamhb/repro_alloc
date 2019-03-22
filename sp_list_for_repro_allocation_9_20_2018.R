@@ -21,6 +21,8 @@ load('wsg.ctfs.Rdata')
 load('bci.spptable.rdata')
 #loading drought indices derived from Engelbrecht et al. 2005; DOI 10.1007/s00468-004-0393-0
 d_indices <- read.csv("drought_indices_Engelbrecht_2007.csv")
+
+load('bci.full7.rdata')
 #loading harms habitat associations
 #"C:\Users\ahanb\OneDrive\Documents\data\Non_Driver_Data"
 
@@ -213,7 +215,7 @@ species_list_final <- species_list %>%
   left_join(rba_df) %>%
   mutate(pft = paste0(e_vs_l,dpft)) %>%
   filter(r_abun >= 50) %>%
-  select(sp, pft, dmax, r_abun, ba, r_ba)
+  select(sp, e_vs_l, pft, dmax, r_abun, ba, r_ba)
 
 
 
