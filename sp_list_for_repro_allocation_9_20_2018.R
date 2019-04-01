@@ -25,6 +25,9 @@ d_indices <- read.csv("drought_indices_Engelbrecht_2007.csv")
 load('bci.full7.rdata')
 #loading harms habitat associations
 #"C:\Users\ahanb\OneDrive\Documents\data\Non_Driver_Data"
+sp.BAlist <- readRDS('sp.BAlist.RDS')
+sp.Glist <- readRDS('sp.Glist.RDS')
+
 
 
 #defining canopy species according to Powell et al., 2018; doi: 10.1111/nph.15271
@@ -64,10 +67,12 @@ pfts_sept_2018 <- merge(pfts_sept_2018, harms_pft, by = "Latin", all.x = T)
 #adding regression coefficients of soil moisture associations from Condit et al., 2012 https://www.pnas.org/content/110/13/5064
 
 # importing the moisture response data from the PNAS paper
-moistr_resp <- read.table("C:/Users/ahanb/OneDrive/Documents/data/Non_Driver_Data/TreeCommunityDrySeasonSpeciesResponse.txt", sep = '\t', header = T)
+moistr_resp <- read.table("TreeCommunityDrySeasonSpeciesResponse.txt", sep = '\t', header = T)
 moistr_resp <- moistr_resp %>% select(Latin, occur, Inter, Moist, Moist.2)
 moistr_resp$Latin <- lapply(X = strsplit(x = as.character(moistr_resp$Latin), split = " (", fixed = T), `[[`, 1) %>% unlist(.)
 
+
+write.csv(moistr_resp[,c(1,3)], "condit_moisture_response.csv")
 
 #merging this new list back with the pft data
 pfts_sept_2018 <- merge(pfts_sept_2018, y = moistr_resp[,c("Latin", "Moist")], by = "Latin", all.x = T)
@@ -91,8 +96,8 @@ pfts_sept_2018 <- pfts_sept_2018 %>% mutate_at(c(7:8), funs(replace(., is.na(.),
 
 PNAS_dt_vs_di <- rep(0, length(pfts_sept_2018$Latin))
 
-PNAS_dt_vs_di[pfts_sept_2018$Moist < -0.0001] <- "di"
-PNAS_dt_vs_di[pfts_sept_2018$Moist > 0] <- "dt"
+PNAS_dt_vs_di[pfts_sept_2018$Moist < 0] <- "dt"
+PNAS_dt_vs_di[pfts_sept_2018$Moist > -0.0001] <- "di"
 
 
 pfts_sept_2018$PNAS_dt_vs_di <- PNAS_dt_vs_di
@@ -101,25 +106,41 @@ pfts_sept_2018$PNAS_dt_vs_di <- PNAS_dt_vs_di
 #creating final dt_vs_di pfts
 dpft <- c()
 for(i in 1:length(pfts_sept_2018$Latin)){
-  if(pfts_sept_2018$engel_dt_vs_di[i] != 0){dpft[i] <- pfts_sept_2018$engel_dt_vs_di[i]}else{
-    if(pfts_sept_2018$harms_dt_vs_di != 0){dpft[i] <- pfts_sept_2018$harms_dt_vs_di[i]}else{
-      dpft[i] <- pfts_sept_2018$PNAS_dt_vs_di[i]
-    }
-  }
+  
+  dpft[i] <- pfts_sept_2018$PNAS_dt_vs_di[i]
+  
+  if(pfts_sept_2018$harms_dt_vs_di[i] != 0){dpft[i] <- pfts_sept_2018$harms_dt_vs_di[i]}
+  
+  if(pfts_sept_2018$engel_dt_vs_di[i] != 0){dpft[i] <- pfts_sept_2018$engel_dt_vs_di[i]}
+  
 }
+  
+#  if(pfts_sept_2018$engel_dt_vs_di[i] != 0){dpft[i] <- pfts_sept_2018$engel_dt_vs_di[i]}else{
+#    if(pfts_sept_2018$harms_dt_vs_di != 0){dpft[i] <- pfts_sept_2018$harms_dt_vs_di[i]}else{
+#      dpft[i] <- pfts_sept_2018$PNAS_dt_vs_di[i]}
+#  }
+#}
 
 pfts_sept_2018$dpft <- dpft
 
-write.csv(pfts_sept_2018, file = paste0("pfts",Sys.Date()))
+
+pfts_sept_2018 %>%
+  dplyr::select(c(1,2,3,6,7,9,10))
+
+
+write.csv(pfts_sept_2018, file = paste0("pfts",Sys.Date(),".csv"))
 
 #acknowledging the ones that we don't have drought tolerance data for
 no_drought_tolerance_data <- pfts_sept_2018[pfts_sept_2018$dpft == "0",]
+no_drought_tolerance_data$dpft <- sample(x = c("dt","di"), size = length(no_drought_tolerance_data$sp), replace = T)  
+write.csv(no_drought_tolerance_data[,c(1,2,3,4,10)], file = "random_assignments.csv")
+
 
 #randomly assigning those few trees to either drought tolerance or intolerant
-pfts_sept_2018[!pfts_sept_2018$dpft == "di" | pfts_sept_2018$dpft == "dt" ,]$dpft <- runif(n = 9,min = 0,max = 1)
-change <- as.logical((is.na(as.numeric(pfts_sept_2018$dpft))*-1)+1)
-pfts_sept_2018$dpft[change][1:4] <- "dt"
-pfts_sept_2018$dpft[change][5:9] <- "di" 
+#pfts_sept_2018[pfts_sept_2018$dpft != "di" | pfts_sept_2018$dpft != "dt" ,]$dpft <- runif(n = 9,min = 0,max = 1)
+#change <- as.logical((is.na(as.numeric(pfts_sept_2018$dpft))*-1)+1)
+#pfts_sept_2018$dpft[change][1:4] <- "dt"
+#pfts_sept_2018$dpft[change][5:9] <- "di" 
 
 #the pft list we use in November 2018
 #pfts_nov_2018 <- pfts_sept_2018 %>% mutate(pft = paste0(e_vs_l,dpft)) %>% select(Latin, sp, pft)
@@ -211,13 +232,31 @@ for(i in 1:nrow(species_list)){
 }
 
 
+
 species_list_final <- species_list %>%
+  left_join(rba_df) %>%
+  mutate(pft = paste0(e_vs_l,dpft)) %>%
+  filter(r_abun >= 50)
+
+species_balance <- species_list %>%
   left_join(rba_df) %>%
   mutate(pft = paste0(e_vs_l,dpft)) %>%
   filter(r_abun >= 50) %>%
   select(sp, e_vs_l, pft, dmax, r_abun, ba, r_ba) %>%
   group_by(pft) %>%
   summarise(n = length(pft))
+
+
+species_list_for_joe <- species_list %>%
+  left_join(rba_df) %>%
+  mutate(pft = paste0(e_vs_l,dpft)) %>%
+  filter(r_abun >= 50) %>%
+  select(c(1,3,4,5,6,7,8,9,10,11))
+
+write.csv(species_list_for_joe, file = "dt_vs_di_for_joe.csv")
+
+
+
 
 
 
