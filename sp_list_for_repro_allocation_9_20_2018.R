@@ -215,7 +215,12 @@ species_list_final <- species_list %>%
   left_join(rba_df) %>%
   mutate(pft = paste0(e_vs_l,dpft)) %>%
   filter(r_abun >= 50) %>%
-  select(sp, e_vs_l, pft, dmax, r_abun, ba, r_ba)
+  select(sp, e_vs_l, pft, dmax, r_abun, ba, r_ba) %>%
+  group_by(pft) %>%
+  summarise(n = length(pft))
+
+
+
 
 
 
