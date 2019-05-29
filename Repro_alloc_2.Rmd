@@ -1,0 +1,360 @@
+---
+title: "Repro_alloc_2"
+author: "R.Ward"
+date: "5/20/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Loading packages: 
+```{r}
+library(tidyverse)
+library(readr)
+library(skimr)
+```
+
+1. Importing species list: 
+- this file contains pfts, basal area, reproductive basal area, and number of reproductive individuals
+- basal area and reproductive basal area are from 2010, units in m2
+
+```{r}
+sp_list_76 <- read_csv("rep_alloc_list_5.18.19.csv", col_types = cols(
+  e_vs_l = col_factor(), 
+  dpft = col_factor(),
+  pft = col_factor()
+))
+
+```
+
+2. Importing BCI trait data:  
+- Reproductive trait data is from BCITRAITS 
+- Units are in grams
+
+```{r}
+bci_repro_traits <- read_csv("BCITRAITS_20101220_updated3.21.19.csv") %>%
+                    mutate(sp = tolower(`SP$`)) %>%
+                    select(sp, FRUIT_DRY, N_SEEDFULL, SEED_DRY, DSPR_DRY) %>% 
+                    right_join(sp_list_76)
+SeedMassforTraits <- read_csv("SeedMassforTraits_20150225.csv") %>% 
+                    mutate(sp = tolower(`SP6$`)) %>%
+                    select(sp, FRUIT_DRY, N_SEEDFULL, SEED_DRY, DSPR_DRY) %>% 
+                    right_join(sp_list_76)
+
+```
+
+
+3. Joining the sp. list and bci traits
+- checking missing values for our list of 26 species   
+- creating a sp. list limited by trait data (59 of the original 76 sp list)
+- looking at distribution across pfts
+
+```{r}
+#looking at missing values
+missing_traits <- bci_repro_traits %>% 
+  filter(is.na(DSPR_DRY) | is.na(FRUIT_DRY) | is.na(N_SEEDFULL) | is.na(SEED_DRY)) %>%
+  select(sp, Latin, pft, FRUIT_DRY, N_SEEDFULL, SEED_DRY)
+
+missing_sp <- missing_traits %>% select(sp)
+#17 missing sp
+# #looking at sp traits and distribution across pfts
+
+# sp_traits %>% group_by(pft) %>% skim()
+# #only ONE earlydt sp in thsi list of 59
+
+#latedi: 27
+#latedt: 16
+#earlydi: 15
+#earlydt: 1
+
+addl_traits <- SeedMassforTraits %>%
+  right_join(missing_sp, by = "sp") %>% 
+  select(sp, FRUIT_DRY, N_SEEDFULL, DSPR_DRY, SEED_DRY)
+
+e = addl_traits
+d = bci_repro_traits
+d$FRUIT_DRY = ifelse(is.na(d$FRUIT_DRY), e$FRUIT_DRY, d$FRUIT_DRY)
+d$N_SEEDFULL = ifelse(is.na(d$N_SEEDFULL), e$N_SEEDFULL, d$N_SEEDFULL)
+d$SEED_DRY = ifelse(is.na(d$SEED_DRY), e$SEED_DRY, d$SEED_DRY)
+d$DSPR_DRY = ifelse(is.na(d$DSPR_DRY), e$DSPR_DRY, d$DSPR_DRY)
+
+skim(d)
+#nine missing sp
+
+#creating sp list with only sp for which we have trait data
+sp_traits <- d %>% na.omit()
+sp_list <- sp_traits %>% select(sp, Latin)
+```
+
+4. Importing 50-ha plot data  
+- Dates: 
+- 25 June 2013 through 29 January 2019 (67 months)
+- first census to identify leaves = census 1381 on 25 June 2013
+
+Notes: 
+
+'Part' Code: 
+0 - reproductive buds
+1 - mature fruit
+2 - single diaspores
+3 - "capsules" (sp. specific estimates of capsules per fruit, not in BCI traits)
+4 - fragments of fruit (1 fragment represents 1 fruit)
+5 - immature fruit
+6 - perfect and female flowers
+7 - fruit with insect emergence hole
+8 - aborted fruits (previously lumped with 5)
+9 - male flowers (previously lumped with 6)
+10 - fruit eaten by an animal
+11 - leaf
+18 - fecal material of howler present in trap
+
+  Joe's previous summed masses were divided by categories like so:   
+- 11 -> leaf  
+- 0, 6, 9 -> flower  
+- 5, 8 -> immature fruit  
+- 1, 2, 3, 4, 7, 10 -> mature fruit  
+   
+```{r}
+Plotdata_50ha <- read_csv("Hanbury_Brown_50ha_rawdata_20190404.csv", col_types = cols(
+  part = col_factor())) %>% 
+  mutate(sp = tolower(sp6))
+
+#for reference later: all observed parts per sp with associated summed counts & mass 
+
+Plotdata_50ha %>% 
+  group_by(sp, part) %>%
+  summarise("count" = sum(quantity),"mass" = sum(mass))
+
+
+```
+
+
+Leaf litter mass:
+- when part == 11, category = "leaf"
+- summing over all observations for each sp.
+- selecting relevant sp.
+```{r}
+leaf_sum <- Plotdata_50ha %>% 
+               filter(part == "11") %>% 
+               group_by(sp) %>% 
+                summarise(leaf_sum = sum(mass)) %>% 
+                right_join(sp_list, by = "sp") 
+
+```
+
+
+   
+Reproductive mass: 
+- repro_sum_1 = sums of masses of reproductive material (repro buds, mat fruit, diaspores, immat fruit, flowers, aborted fruits, male flowers; codes are: 0, 1, 2, 5, 6, 8, 9)  
+- repro_sum_2 = extrapolated mass from count data for capsules, fragments, fruit with emerging insect holes, fruit eaten by animals (codes are: 3, 4, 7, 10)  
+- mat_fruit = combination of mass data with code "1" and extrapotated mature fruit mass from 'repro_sum_2'  
+- repro_sum = combination of previous masses and estimated masses into one dataframe
+
+
+```{r}
+#part 0 = buds, 1 = mat fruit, 2 = single diaspores, 5 = imat fruit, 6 = flowers, 8 = aborted fruit, 9 = male fowers
+repro_sum_1 <- Plotdata_50ha %>% 
+  filter(part == 0 | part == 1 | part == 2 | part ==  5 | part ==  6 | part == 8 | part ==  9) %>% 
+  group_by(sp) %>%
+  summarise(sum_repro_1 = sum(mass)) %>%
+  right_join(sp_list, by = "sp") %>%
+  select(sp, sum_repro_1)
+
+#The reproductive mass lost to herbivory etc estimated by extrapolating from counts
+#part 3 = capsules; 1 count =  1 fruit
+#part 4 = fragments; 1 count =  1 fruit
+#part 7 = fruit w insect emergence; 1 count =  1 fruit
+#part 10 = fruit eaten by animal; 1 count =  1 fruit
+
+repro_sum_2 <- Plotdata_50ha %>% 
+  filter(part == 3 | part == 4 | part == 7 | part == 10) %>%
+  group_by(sp) %>% 
+  summarise("count" = sum(quantity)) %>% 
+  right_join(sp_traits, by = "sp") %>%
+  select(sp, count, FRUIT_DRY) %>% 
+  mutate(sum_repro_2 = count * FRUIT_DRY) %>% 
+  select(sp, count, sum_repro_2) 
+
+mat_fruit <- Plotdata_50ha %>% 
+  filter(part == 1) %>% 
+  group_by(sp) %>%
+  summarise(mat_fruit = sum(mass)) %>%
+  right_join(sp_list, by = "sp") %>%
+  select(sp, mat_fruit)
+
+#combining all masses of reproductive material per species
+
+repro_sum <- repro_sum_1 %>% 
+  left_join(repro_sum_2, by = "sp") %>%
+  left_join(mat_fruit, by = "sp") %>%
+  group_by(sp) %>%
+  mutate(sum_repro = sum(sum_repro_1, sum_repro_2, na.rm = T)) %>%
+  mutate(mature_frt_mass = sum(mat_fruit, sum_repro_2, na.rm = T)) %>%
+  select(sp, sum_repro, mature_frt_mass)
+
+```
+
+
+###Scaling: 
+
+Leaf litter mass:   
+- Leaf litter output per year per year = $L_{mass} / 67_{mo} * 12_{mo} / year = L_{mass} / year$  
+- Mass per m2 for 62 0.5m2 traps = $L_{mass}/ 31 m^2$  
+- Leaf litter mass per m2 scaled to the 50 ha plot by sp total basal area = $L_{mass} / m^2 * 500,000 m^2 * 1/ BA m^2)$ 
+
+Reproductive mass:
+- Our mass value is a sum of reproductive output from 25 June 2013 through 29 January 2019 (67 months)
+- Reproductive output per year =  $R_{mass} / 67_{mo} * 12_{mo} / year = R_{mass} / year$
+- Mass per m2 for 62 0.5m2 traps = $R_{mass}/ 31 m^2$
+- Reproductive mass per m2 scaled to the 50 ha plot by sp reproductive basal area = $R_{mass} / m^2 * 500,000 m^2 * 1/ BA_{R} (m^2)$
+
+
+
+
+```{r}
+#scaling to 50 ha
+leaf_scaled <- leaf_sum %>% 
+               right_join(sp_traits, by = "sp") %>%
+               mutate(leaf_mass_per_yr = leaf_sum * 12 / 67) %>%
+               mutate(leaf_mass_per_yr_m2 = leaf_mass_per_yr / 31) %>%
+               mutate(leaf_output_50_ha = (leaf_mass_per_yr_m2 * 500000 / ba)) %>%
+               select(sp, leaf_mass_per_yr, leaf_mass_per_yr_m2, leaf_output_50_ha) 
+
+
+repro_scaled <- repro_sum %>%
+                  right_join(sp_traits, by = "sp") %>%
+                  mutate(repro_mass_total = sum_repro) %>%
+                  mutate(repro_mass_per_yr = repro_mass_total * 12 / 67) %>%
+                  mutate(repro_mass_per_yr_m2 = repro_mass_per_yr / 31) %>%  
+                  mutate(repro_mass_per_yr_indv = repro_mass_per_yr / r_abun) %>%
+                  mutate(repro_output_50_ha = (repro_mass_per_yr_m2 * 500000 / r_ba)) %>%
+                  select(sp, mature_frt_mass, repro_mass_total, repro_mass_per_yr_indv, repro_mass_per_yr, repro_mass_per_yr_m2, repro_output_50_ha) 
+
+```
+
+
+Joining all trait data: 
+- trait data include data frames of species traits, scaled reproductive masses, and scaled leaf litter masses
+- Looking at outliers (where frac_repro_output >=1.0)
+  - distribution of leaves/ fruit / etc across the 50 ha is not random
+  
+```{r}
+
+Repro_trait_data <- sp_traits %>%
+                left_join(repro_scaled, by = "sp") %>%
+                left_join(leaf_scaled, by = "sp") %>%
+                mutate(frac_repro_output = repro_output_50_ha / leaf_output_50_ha) %>%
+                mutate(frac_repro_output = na_if(frac_repro_output, 0))
+  
+
+outliers <- Repro_trait_data %>%
+   filter(frac_repro_output >= 1.0) %>%
+   select(sp, pft, repro_mass_per_yr_m2, ba, r_ba, repro_output_50_ha, leaf_output_50_ha, frac_repro_output)
+
+outliers
+
+
+```
+
+Graphing the frac_repro_output =  scaled reproductive mass / scaled leaf litter mass across pfts: 
+
+```{r}
+
+Repro_trait_data %>%
+        group_by(pft) %>%
+        #filter(frac_repro_output < 1) %>%
+        ggplot(aes(pft, frac_repro_output, na.rm = T)) + geom_boxplot()
+
+Repro_trait_data %>%
+        group_by(pft) %>%
+ select(sp, pft, frac_repro_output) %>% skim()
+
+#arbitrarily excluding potential outliers, where frac_repro_output was greater than 1.5
+#even excluding these, the average frac of repro_output/leaf_litter_output >> 0.10
+Repro_trait_data %>%
+        group_by(pft) %>%
+        filter(frac_repro_output < 1) %>% select(sp, pft, frac_repro_output) %>% 
+        ggplot(aes(pft, frac_repro_output)) + geom_boxplot()
+
+
+Repro_trait_data %>%
+        group_by(pft) %>%
+        filter(frac_repro_output < 1.0) %>%
+        ggplot(aes(pft, frac_repro_output, na.rm = T)) + geom_boxplot()
+
+
+Repro_trait_data %>%
+        group_by(e_vs_l) %>%
+        filter(frac_repro_output < 1.0) %>%
+        ggplot(aes(e_vs_l, frac_repro_output, na.rm = T)) + geom_boxplot()
+
+Repro_trait_data %>%
+        group_by(dpft) %>%
+        filter(frac_repro_output < 1.0) %>%
+        ggplot(aes(dpft, frac_repro_output, na.rm = T)) + geom_boxplot()
+
+```
+
+
+Calculating expected seed mass, and fraction of reproductive output that is seed:
+
+- Mass is combined mass from mature fruit and mass from mature fruit extrapolated from counts
+- Expected seed mass is calculated from mature fruit mass using BCI trait measures for average weight of dried fruit, average number of seeds per fruit, and average weight of dried seeds
+- Expected seed mass = Mature_frt_mass / fruit_dry_mass * number_seeds * seed_weight
+- Units for the numerator and denominator of this fraction are in g, both are summed over 67 months for 31 m2
+
+```{r}
+repro_seeds_df <- Repro_trait_data %>%
+                  mutate(expd_seed_mass = ((mature_frt_mass/ FRUIT_DRY) * N_SEEDFULL * SEED_DRY)) %>%
+                  mutate(fract_seed_of_repro = expd_seed_mass / repro_mass_total)
+
+
+#looking at outliers
+
+skim(repro_seeds_df)
+repro_seeds_df %>% filter (fract_seed_of_repro > 1)
+
+#graphing pft
+repro_seeds_df %>%
+        filter(fract_seed_of_repro <10) %>%
+        group_by(pft) %>%
+        ggplot(aes(pft, fract_seed_of_repro)) + geom_boxplot()
+
+#summarizing by pft
+repro_seeds_df %>%
+        filter(fract_seed_of_repro <10) %>%
+        group_by(pft) %>%
+        summarize(per_pft_seed_frac_repro = mean(fract_seed_of_repro, na.rm = T), 
+                  se = sd(fract_seed_of_repro, na.rm = T)/length(fract_seed_of_repro))
+   
+#graphing e_vs_l
+repro_seeds_df %>%
+        filter(fract_seed_of_repro <10) %>%
+        group_by(e_vs_l) %>%
+        ggplot(aes(e_vs_l, fract_seed_of_repro)) + geom_boxplot()
+
+#graphing dt vs di
+repro_seeds_df %>%
+        filter(fract_seed_of_repro <10) %>%
+        group_by(dpft) %>%
+        ggplot(aes(dpft, fract_seed_of_repro)) + geom_boxplot()
+```
+
+
+Questions/ next steps:
+
+1. I'm assuming capsule counts represent 1 fruit
+  - Joe is checking files for a ratio of capsules: fruit
+  
+2. Outliers suggest that (as excepcted) distribution of reproductive and leaf litter across the 50 ha is not random 
+- need to look at trap locations and sp in outliers list
+- how would we correct for this?
+
+3. Need to find/estimate missing values for bci trait data to increase sp. list (especially for earlydt)
+
+
+
+
+
