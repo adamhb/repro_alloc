@@ -1,0 +1,811 @@
+code4,code6,family,genus,species,authority,bat,small_bird,large_bird,nonvolant_mammal,wind,explosive,water
+APHS,APHESI,Acanthaceae,Aphelandra,sinclairiana,Nees,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+BLEC,,Acanthaceae,Blechum,costaricense,Oerst.,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+JUSG,JUSTGR,Acanthaceae,Justicia,graciliflora,(Standl.) D.N. Gibson,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+MENG,MENDGR,Acanthaceae,Mendoncia,gracilis,Turrill,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+MENL,MENDLI,Acanthaceae,Mendoncia,litoralis,Leonard,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+TRIG,TRI1GI,Acanthaceae,Trichanthera,gigantea,(Bonpl.) Nees,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+ANAE,ANACEX,Anacardiaceae,Anacardium,excelsum,(Bertero & Balb. ex Kunth) Skeels,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+ANAO,ANACOC,Anacardiaceae,Anacardium,occidentale,L.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+ASTG,AST2GR,Anacardiaceae,Astronium,graveolens,Jacq.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MANI,MANGIN,Anacardiaceae,Mangifera,indica,L.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+MOSJ,MOSQJA,Anacardiaceae,Mosquitoxylum,jamaicense,Krug & Urb.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+SPOM,SPONMO,Anacardiaceae,Spondias,mombin,L.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+SPOP,SPONPU,Anacardiaceae,Spondias,purpurea,L.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+SPOR,SPONRA,Anacardiaceae,Spondias,radlkoferi,Donn. Sm.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+TAPG,TAPIGU,Anacardiaceae,Tapirira,guianensis,Aubl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ANAP,ANAXPA,Annonaceae,Anaxagorea,panamensis,Standl.,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+ANNA,ANNOAC,Annonaceae,Annona,acuminata,Saff.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ANNG,ANNOGL,Annonaceae,Annona,glabra,L.,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
+ANNH,ANNOHA,Annonaceae,Annona,hayesii,Saff.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+ANNM,ANNOMU,Annonaceae,Annona,muricata,L.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ANNS,ANNOSP,Annonaceae,Annona,spraguei,Saff.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+CREP,CREMPA,Annonaceae,Cremastosperma,panamense,Maas,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CYML,CYM1LA,Annonaceae,Cymbopetalum,lanugipetalum,Schery,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+DESP,DES2PA,Annonaceae,Desmopsis,panamensis,(B.L. Rob.) Saff.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+GUAA,GUATAM,Annonaceae,Guatteria,amplifolia,Triana & Planch.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+GUAD,GUATDU,Annonaceae,Guatteria,dumetorum,R.E. Fr.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CRES,MALMSP,Annonaceae,Mosannona,garwoodii,Chatrou & Welzenis,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+OXAL,OXANLO,Annonaceae,Oxandra,longipetala,R.E. Fr.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+UNO2,UNONPA,Annonaceae,Unonopsis,panamensis,R.E. Fr.,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+UNOP,UNONPI,Annonaceae,Unonopsis,pittieri,Saff.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+XYLF,XYL1FR,Annonaceae,Xylopia,frutescens,Aubl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+XYLM,XYL1MA,Annonaceae,Xylopia,macrantha,Triana & Planch.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ALLC,ALLACA,Apocynaceae,Allamanda,cathartica,L.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ASPM,ASPIME,Apocynaceae,Aspidosperma,megalocarpon,Müll. Arg.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ASPC,ASPICR,Apocynaceae,Aspidosperma,spruceanum,Benth. ex Müll. Arg.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+FORM,FORSMY,Apocynaceae,Forsteronia,myriantha,Donn. Sm.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+FORP,FORSPE,Apocynaceae,Forsteronia,peninsularis,Woodson,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+FORS,FORSSP,Apocynaceae,Forsteronia,spicata,(Jacq.) G. Mey.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+FORV,FORSVI,Apocynaceae,Forsteronia,viridescens,S.F. Blake,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+LACP,LACMPA,Apocynaceae,Lacmellea,panamensis,(Woodson) Markgr.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+MALG,MALOGU,Apocynaceae,Malouetia,guatemalensis,(Müll. Arg.) Standl.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MANS,MANDSU,Apocynaceae,Mandevilla,subsagittata,(Ruiz & Pav.) Woodson,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MANV,MANDVI,Apocynaceae,Mandevilla,villosa,(Miers) Woodson,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MEST,MESETR,Apocynaceae,Mesechites,trifidus,(Jacq.) Müll. Arg.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ODOM,ODO1MA,Apocynaceae,Odontadenia,macrantha,(Roem. & Schult.) Markgr.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ODOP,ODO1PU,Apocynaceae,Odontadenia,puncticulosa,(Rich.) Pulle,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+PREI,PRESIP,Apocynaceae,Prestonia,ipomaeifolia,A. DC.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+PREO,PRESOB,Apocynaceae,Prestonia,obovata,Standl.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+PREP,PRESPO,Apocynaceae,Prestonia,portobellensis,(Beurl.) Woodson,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+PREA,PRESAC,Apocynaceae,Prestonia,quinquangularis,(Jacq.) Spreng.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+RHAB,RHABBI,Apocynaceae,Rhabdadenia,biflora,(Jacq.) Müll. Arg.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+STEG,STEMGR,Apocynaceae,Stemmadenia,grandiflora,(Jacq.) Miers,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+TABA,TAB2AR,Apocynaceae,Tabernaemontana,arborea,Rose,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+THEA,THEVAH,Apocynaceae,Thevetia,ahouai,(L.) A. DC.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+ANTA,,Araceae,Anthurium,acutangulum,Engl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ANTB,,Araceae,Anthurium,brownii,Mast.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ANTC,ANTHCL,Araceae,Anthurium,clavigerum,Poepp. & Endl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ANTL,,Araceae,Anthurium,durandii,Engl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ANT1,,Araceae,Anthurium,flexile,Schott,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ANT2,,Araceae,Anthurium,friedrichsthalii,Schott,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ANTG,,Araceae,Anthurium,gracile,(Rudge) Schott,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ANT3,,Araceae,Anthurium,kunthii,Poepp. & Endl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ANTO,,Araceae,Anthurium,ochranthum,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ANT4,,Araceae,Anthurium,salvinii,Hemsl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ANT6,,Araceae,Anthurium,scandens,(Aubl.) Engl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+MODI,,Araceae,Monstera,dilacerata,(Kunth) Engl. & K. Krause,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+MODU,MONSDU,Araceae,Monstera,dubia,(Kunth) Engl. & K. Krause,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+PHIF,PHILFR,Araceae,Philodendron,fragrantissimum,(Hook.) G. Don,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PHIG,,Araceae,Philodendron,guttiferum,Kunth,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PHIS,,Araceae,Philodendron,hederaceum,(Jacq.) Schott,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PHI1,,Araceae,Philodendron,inaequilaterum,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PHIP,,Araceae,Philodendron,panamense,K. Krause,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PHI2,,Araceae,Philodendron,pterotum,K. Koch & Augustin,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PHI3,,Araceae,Philodendron,sagittifolium,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PHIT,,Araceae,Philodendron,tripartitum,(Jacq.) Schott,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+SYNH,,Araceae,Syngonium,hoffmannii,Schott,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+SYNP,,Araceae,Syngonium,podophyllum,Schott,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+DENA,DENDAR,Araliaceae,Dendropanax,arboreus,(L.) Decne. & Planch.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+OREC,OREOCA,Araliaceae,Oreopanax,capitatus,(Jacq.) Decne. & Planch.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+SCHM,SCH2MO,Araliaceae,Schefflera,morototoni,"(Aubl.) Maguire, Steyerm. & Frodin",FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ACRA,ACROPA,Arecaceae,Acrocomia,aculeata,(Jacq.) Lodd. ex Mart.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+ASTS,AST1ST,Arecaceae,Astrocaryum,standleyanum,L.H. Bailey,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+ATTB,SCH1ZO,Arecaceae,Attalea,butyracea,(Mutis ex L. f.) Wess. Boer.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+BACB,BACTBA,Arecaceae,Bactris,barronis,L.H. Bailey,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+BAC1,BACTC1,Arecaceae,Bactris,coloniata,L.H. Bailey,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+BAC2,BACTC2,Arecaceae,Bactris,coloradonis,L.H. Bailey,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+BACM,BACTMA,Arecaceae,Bactris,major,Jacq.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+BACP,BACTPA,Arecaceae,Bactris,panamensis,de Nevers & Grayum,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+CHAW,CHA1TE,Arecaceae,Chamaedorea,tepejilote,Liebm. ex Mart.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+CRYW,CRYOWA,Arecaceae,Cryosophila,warscewiczii,(H. Wendl.) Bartlett,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+DESI,DES1OR,Arecaceae,Desmoncus,orthacanthos,Mart.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+ELAO,ELAEOL,Arecaceae,Elaeis,oleifera,(Kunth) Cortés ex Prain,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+EUTP,EUTEPR,Arecaceae,Euterpe,precatoria,Mart.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+GEC2,GEONCO,Arecaceae,Geonoma,congesta,H. Wendl. ex Spruce,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+GEOC,GEONCU,Arecaceae,Geonoma,cuneata,H. Wendl. ex Spruce,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+GEOI,GEONIN,Arecaceae,Geonoma,interrupta,(Ruiz & Pav.) Mart.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+OENM,OENOMA,Arecaceae,Oenocarpus,mapora,H. Karst.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+SOCE,SOCREX,Arecaceae,Socratea,exorrhiza,(Mart.) H. Wendl.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+SYNW,SYNEWA,Arecaceae,Synechanthus,warscewiczianus,H. Wendl.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+ARIG,ARISGI,Aristolochiaceae,Aristolochia,cordiflora,Mutis ex  Kunth,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ARII,,Aristolochiaceae,Aristolochia,inflata,Kunth,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ARIM,ARISMA,Aristolochiaceae,Aristolochia,maxima,Jacq.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ARIP,ARISPI,Aristolochiaceae,Aristolochia,pilosa,Kunth,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ARIC,ARISTO,Aristolochiaceae,Aristolochia,tonduzii,O.C. Schmidt,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ASCC,,Asclepiadaceae,Asclepias,curassavica,L.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+BLEM,BLEPMU,Asclepiadaceae,Blepharodon,mucronatum,(Schltdl.) Decne.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+FISF,FISCBL,Asclepiadaceae,Fischeria,blepharopetala,S.F. Blake,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+GONA,,Asclepiadaceae,Gonolobus,albomarginatus,(Pittier) Woodson,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MARC,MARSCR,Asclepiadaceae,Marsdenia,crassipes,Hemsl.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CYNC,CYNACU,Asclepiadaceae,Metalepis,peraffinis,(Woodson) Morillo,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CYNR,CYNARE,Asclepiadaceae,Tassadia,obovata,Decne.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CHRO,CHR4OD,Asteraceae,Chromolaena,odorata,(L.) R.M. King & H. Rob.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+KOAW,KOANWE,Asteraceae,Koanophyllon,wetmorei,(B.L. Rob.) R.M. King & H. Rob.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+VERC,LEPICA,Asteraceae,Lepidaploa,canescens,(Kunth) H. Rob.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MIKH,MIKAHO,Asteraceae,Mikania,hookeriana,DC.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MIKL,MIKALE,Asteraceae,Mikania,leiostachya,Benth.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MIKM,MIKAMI,Asteraceae,Mikania,micrantha,Kunth,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MIKT,MIKATO,Asteraceae,Mikania,tonduzii,B.L. Rob.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+WULB,WULFBA,Asteraceae,Tilesia,baccata,(L.) Pruski,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+VERP,VERNPA,Asteraceae,Vernonanthura,patens,(Kunth) H. Rob.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ADE2,ADE3IN,Bignoniaceae,Adenocalymma,inundatum,Mart. ex DC.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+AMPP,AMPHPA,Bignoniaceae,Amphilophium,paniculatum,(L.) Kunth,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ANEC,ANEMCH,Bignoniaceae,Anemopaegma,chrysoleucum,(Kunth) Sandwith,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE
+ANEO,ANEMOR,Bignoniaceae,Anemopaegma,orbiculatum,(Jacq.) DC.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ANES,ANEMSA,Bignoniaceae,Anemopaegma,santaritense,A.H. Gentry,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ARR3,,Bignoniaceae,Arrabidaea,3,(Standl.) A.H. Gentry,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ARR1,ARRACA,Bignoniaceae,Arrabidaea,candicans,(Rich.) DC.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ARR2,ARRACH,Bignoniaceae,Arrabidaea,chica,(Humb. & Bonpl.) B. Verl.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ARRF,ARRAFL,Bignoniaceae,Arrabidaea,florida,A. DC.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ARRP,ARRAPA,Bignoniaceae,Arrabidaea,patellifera,(Schltdl.) Sandwith,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ARRV,ARRAVE,Bignoniaceae,Arrabidaea,verrucosa,(Standl.) A.H. Gentry,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CAL1,CALLLA,Bignoniaceae,Callichlamys,latifolia,(L. Rich.) K. Schum.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CERT,CERATE,Bignoniaceae,Ceratophytum,tetragonolobum,(Jacq.) Sprague & Sandwith,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CLYB,CLYTBI,Bignoniaceae,Clytostoma,binatum,(Thunb.) Sandwith,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CYDA,CYDIAE,Bignoniaceae,Cydista,aequinoctialis,Seibert,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CYDH,CYDIHE,Bignoniaceae,Cydista,heterophylla,Seibert,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+JAC1,JAC1CA,Bignoniaceae,Jacaranda,caucana,Pittier,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+JACC,JAC1CO,Bignoniaceae,Jacaranda,copaia,(Aubl.) D. Don,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MACU,MACFUN,Bignoniaceae,Macfadyena,unguis-cati,(L.) A.H. Gentry,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE
+PACK,MANSKE,Bignoniaceae,Mansoa,kerere,(Aubl.) A.H. Gentry,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+ONOV,MANSVE,Bignoniaceae,Mansoa,verrucifera,(Schltdl.) A.H. Gentry,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MARO,MARTOB,Bignoniaceae,Martinella,obovata,(Kunth) Bureau & K. Schum.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+PARP,PAR1PY,Bignoniaceae,Paragonia,pyramidata,(Rich.) Bureau,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+PHRC,PHRYCO,Bignoniaceae,Phryganocydia,corymbosa,(Vent.) Bureau ex K. Schum.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+PITC,PIT2CR,Bignoniaceae,Pithecoctenium,crucigerum,(L.) A.H. Gentry,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+PLEV,PLEOVA,Bignoniaceae,Pleonotoma,variabilis,(Jacq.) Miers,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+STIR,STIZRI,Bignoniaceae,Stizophyllum,riparium,(Kunth) Sandwith,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TABG,TAB1GU,Bignoniaceae,Tabebuia,guayacan,(Seem.) Hemsl.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TABO,TAB1OC,Bignoniaceae,Tabebuia,ochracea,(Cham.) Standl.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TABR,TAB1RO,Bignoniaceae,Tabebuia,rosea,(Bertol.) A. DC.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TYNC,TYNNCR,Bignoniaceae,Tynanthus,croatianus,A.H. Gentry,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CAVP,CAVAPL,Bombacaceae,Cavanillesia,platanifolia,(Bonpl.) Kunth,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CEIP,CEIBPE,Bombacaceae,Ceiba,pentandra,(L.) Gaertn.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+OCHP,OCHRPY,Bombacaceae,Ochroma,pyramidale,(Cav. ex Lam.) Urb.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+PACA,POCHAQ,Bombacaceae,Pachira,aquatica,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+BOMQ,POCHQU,Bombacaceae,Pachira,quinata,(Jacq.) W.S. Alverson,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+BOMS,POCHSE,Bombacaceae,Pachira,sessilis,Benth.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+PSE1,PSE1SE,Bombacaceae,Pseudobombax,septenatum,(Jacq.) Dugand,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+QUA1,QUARAS,Bombacaceae,Quararibea,asterolepis,Pittier,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+QUAP,QUARPT,Bombacaceae,Quararibea,pterocalyx,Hemsl.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+CORA,CORDAL,Boraginaceae,Cordia,alliodora,(Ruiz & Pav.) Oken,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CORB,CORDBI,Boraginaceae,Cordia,bicolor,A. DC.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CORL,CORDLA,Boraginaceae,Cordia,lasiocalyx,Pittier,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CORP,CORDPA,Boraginaceae,Cordia,panamensis,L. Riley,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CORS,CORDSP,Boraginaceae,Cordia,spinescens,L.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+TOUA,,Boraginaceae,Tournefortia,angustiflora,Ruiz & Pav.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+TOUB,TOURBI,Boraginaceae,Tournefortia,bicolor,Sw.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+TOUC,TOURCU,Boraginaceae,Tournefortia,cuspidata,Kunth,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+TOUH,TOURHI,Boraginaceae,Tournefortia,hirsutissima,L.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+AECP,,Bromeliaceae,Aechmea,pubescens,Baker,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+AECS,,Bromeliaceae,Aechmea,setigera,Mart. ex Schult. & Schult. f.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+AECT,,Bromeliaceae,Aechmea,tillandsioides,(Mart. ex Schult. & Schult. f.) Baker,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+BILM,,Bromeliaceae,Billbergia,macrolepis,L.B. Sm.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+GUZL,,Bromeliaceae,Guzmania,lingulata,(L.) Mez,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+GUZM,,Bromeliaceae,Guzmania,monostachia,(L.) Rusby ex Mez,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TILA,,Bromeliaceae,Tillandsia,anceps,G. Lodd.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TILB,,Bromeliaceae,Tillandsia,bulbosa,Hook.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TILF,,Bromeliaceae,Tillandsia,fasciculata,Sw.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TILM,,Bromeliaceae,Tillandsia,monadelpha,(E. Morren) Baker,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+VRIS,,Bromeliaceae,Werauhia,sanguinolenta,(Linden ex Cogn. & Marchal) J.R. Grant,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+BURS,BURSSI,Burseraceae,Bursera,simaruba,(L.) Sarg.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+PRO1,PROTSP,Burseraceae,Protium,confusum,(Rose) Pittier,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+PROC,PROTCO,Burseraceae,Protium,costaricense,(Rose) Engl.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+PROP,PROTPA,Burseraceae,Protium,panamense,(Rose) I.M. Johnst.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+PROT,PROTTE,Burseraceae,Protium,tenuifolium,Engl.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+TET2,TET2PA,Burseraceae,Tetragastris,panamensis,(Engl.) Kuntze,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+TRAA,TRATAS,Burseraceae,Trattinnickia,aspera,(Standl.) Swart,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+EPPR,,Cactaceae,Epiphyllum,phyllanthus,(L.) Haw.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+CAPF,CAPPFR,Capparaceae,Capparis,frondosa,Jacq.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CAPI,CAPPIN,Capparaceae,Capparis,indica,(L.) Druce,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+JACS,JAC2SP,Caricaceae,Jacaratia,spinosa,(Aubl.) A. DC.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CARC,CARICA,Caricaceae,Vasconcellea,cauliflora,(Jacq.) A. DC.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+CECI,CECRIN,Cecropiaceae,Cecropia,insignis,Liebm.,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CECL,CECRLO,Cecropiaceae,Cecropia,longipes,Pittier,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CECO,CECROB,Cecropiaceae,Cecropia,obtusifolia,Bertol.,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CECP,CECRPE,Cecropiaceae,Cecropia,peltata,L.,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+COUM,,Cecropiaceae,Coussapoa,asperifolia,Trécul,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+COU2,COUSVI,Cecropiaceae,Coussapoa,villosa,Poepp. & Endl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+POUB,POURBI,Cecropiaceae,Pourouma,bicolor,Mart.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+MAYS,MAYTSC,Celastraceae,Maytenus,schippii,Lundell,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+HIRA,HIRTAM,Chrysobalanaceae,Hirtella,americana,L.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+HIR2,HIRTRA,Chrysobalanaceae,Hirtella,racemosa,Lam.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+HIRT,HIRTTR,Chrysobalanaceae,Hirtella,triandra,Sw.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+LICH,LICAHY,Chrysobalanaceae,Licania,hypoleuca,Benth.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+LICP,LICAPL,Chrysobalanaceae,Licania,platypus,(Hemsl.) Fritsch,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+MAR1,MARAPA,Chrysobalanaceae,Maranthes,panamensis,(Standl.) Prance & F. White,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+CAL2,CALOLO,Clusiaceae,Calophyllum,longifolium,Willd.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+TOVN,CHR1EC,Clusiaceae,Chrysochlamys,eclipes,L.O. Williams,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CLUC,CLUSCR,Clusiaceae,Clusia,cretosa,L.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+HAVF,HAVEFL,Clusiaceae,Clusia,flavida,(Benth.) Pipoly,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+CLUM,,Clusiaceae,Clusia,minor,L.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+CLUO,,Clusiaceae,Clusia,odorata,Seem.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+CLUP,,Clusiaceae,Clusia,peninsularis,Pittier,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+CLUV,CLUSVA,Clusiaceae,Clusia,valerioi,Standl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+RHEE,GAR2IN,Clusiaceae,Garcinia,intermedia,(Pittier) Hammel,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+RHEA,GAR2MA,Clusiaceae,Garcinia,madruno,(Kunth) Hammel,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+MARL,MAR1LA,Clusiaceae,Marila,laxiflora,Rusby,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+SYMG,SYMPGL,Clusiaceae,Symphonia,globulifera,L. f.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+TOVL,TOVOLO,Clusiaceae,Tovomita,longifolia,(Rich.) Hochr.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+TOVS,TOVOST,Clusiaceae,Tovomita,stylosa,Hemsl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+VIS1,VISMBA,Clusiaceae,Vismia,baccifera,(L.) Triana & Planch.,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+VIS2,VISMBI,Clusiaceae,Vismia,billbergiana,Beurl.,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+VISM,VISMMA,Clusiaceae,Vismia,macrophylla,Kunth,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+COCV,COCHVI,Cochlospermaceae,Cochlospermum,vitifolium,(Willd.) Spreng.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+COMC,COMBCA,Combretaceae,Combretum,cacoucia,Exell,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+COMD,COMBDE,Combretaceae,Combretum,decandrum,Jacq.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+COMF,COMBFR,Combretaceae,Combretum,fruticosum,(Loefl.) Stuntz,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+COML,COMBLA,Combretaceae,Combretum,laxum,Jacq.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TERA,TERMAM,Combretaceae,Terminalia,amazonia,(J.F. Gmel.) Exell,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TERL,,Combretaceae,Terminalia,lucida,Hoffmanns. ex Mart.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TERO,TERMOB,Combretaceae,Terminalia,oblonga,(Ruiz & Pav.) Steud.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CNER,CNESRU,Connaraceae,Cnestidium,rufescens,Planch.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+CONP,CONNPA,Connaraceae,Connarus,panamensis,Griseb.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+CONT,CONNTU,Connaraceae,Connarus,turczaninowii,Triana,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ROUG,ROURGL,Connaraceae,Rourea,glabra,Kunth,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+BONM,BONAMA,Convolvulaceae,Bonamia,maripoide,Hallier f.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+BONT,BONATR,Convolvulaceae,Bonamia,trichantha,Hallier f.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+IPOP,IPOMPH,Convolvulaceae,Ipomoea,phillomega,(Vell.) House,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+IPOS,IPOMSQ,Convolvulaceae,Ipomoea,squamosa,Choisy,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+IPOT,IPOMTI,Convolvulaceae,Ipomoea,tiliacea,(Willd.) Choisy,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ISEL,ISEILU,Convolvulaceae,Iseia,luxurians,(Moric.) O'Donell,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+MARP,MAR2PA,Convolvulaceae,Maripa,panamensis,Hemsl.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+JACP,ODONHI,Convolvulaceae,Odonellia,hirtiflora,(M. Martens & Galeotti) K.R. Robertson,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+COSA,,Costaceae,Costus,allenii,Maas,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+COSG,,Costaceae,Costus,guanaiensis,Rusby,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+COSP,,Costaceae,Costus,pulverulentus,C. Presl,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+CAYD,CAYADE,Cucurbitaceae,Cayaponia,denticulata,Killip ex C. Jeffrey,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CAYG,CAYAGR,Cucurbitaceae,Cayaponia,granatensis,Cogn.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CAYR,,Cucurbitaceae,Cayaponia,racemosa,(Mill.) Cogn.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+FEVC,FEVICO,Cucurbitaceae,Fevillea,cordifolia,L.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+GURC,GURACO,Cucurbitaceae,Gurania,coccinea,Cogn.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+GUR1,GURAMA,Cucurbitaceae,Gurania,makoyana,(Lem.) Cogn.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+GUR2,GURATU,Cucurbitaceae,Gurania,tubulosa,Cogn.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+MOMC,MOMOCH,Cucurbitaceae,Momordica,charantia,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PSIB,PSIGBI,Cucurbitaceae,Psiguria,bignoniacea,(Poepp. & Endl.) Wunderlin,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+PSIW,PSIGWA,Cucurbitaceae,Psiguria,warscewiczii,(Hook. f.) Wunderlin,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+SICC,SICYCO,Cucurbitaceae,Sicydium,coriaceum,Cogn.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+NEPC,,Cyatheaceae,Alsophila,cuspidata,(Kunze) D.S. Conant,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TRI5,,Cyatheaceae,Cyathea,bicrenata,Liebm.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TRI4,,Cyatheaceae,Cyathea,microdonta,(Desv.) Domin,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CNEP,CNEMPE,Cyatheaceae,Cyathea,petiolata,(Hook.) R.M. Tryon,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+DAVN,DAVINI,Dilleniaceae,Davilla,nitida,(Vahl) Kubitzki,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+DOLD,DOLIDE,Dilleniaceae,Doliocarpus,dentatus,(Aubl.) Standl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+DOL1,DOLIMA,Dilleniaceae,Doliocarpus,major,J.F. Gmel.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+DOL2,DOLIMU,Dilleniaceae,Doliocarpus,multiflorus,Standl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+DOLO,DOLIOL,Dilleniaceae,Doliocarpus,olivaceus,Sprague & R.O. Williams ex Standl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+TETH,TET1HY,Dilleniaceae,Tetracera,hydrophila,Triana & Planch.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+TET1,TET1PO,Dilleniaceae,Tetracera,portobellensis,Beurl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+TETV,TET1VO,Dilleniaceae,Tetracera,volubilis,L.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+DIO1,DIO1AL,Dioscoreaceae,Dioscorea,alata,L.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+DIOH,DIO1HA,Dioscoreaceae,Dioscorea,haenkeana,C. Presl,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+DIOS,DIO1PI,Dioscoreaceae,Dioscorea,pilosiuscula,Bertero ex Spreng.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+DIOP,DIO1PO,Dioscoreaceae,Dioscorea,polygonoides,Humb. & Bonpl. ex Willd.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+DIOU,DIO1UR,Dioscoreaceae,Dioscorea,urophylla,Hemsl.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+DIO2,DIO2AR,Ebenaceae,Diospyros,artanthifolia,Mart. ex Miq.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+SLOM,SLOAM1,Elaeocarpaceae,Sloanea,meianthera,Donn. Sm.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+SLOT,SLOATE,Elaeocarpaceae,Sloanea,terniflora,(Sessé & Moc. ex DC.) Standl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+SLOZ,SLOAZU,Elaeocarpaceae,Sloanea,zuliaensis,Pittier,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ERYM,ERY2MA,Erythroxylaceae,Erythroxylum,macrophyllum,Cav.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ERYP,ERY2PA,Erythroxylaceae,Erythroxylum,panamense,Turcz.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ACAD,ACALDI,Euphorbiaceae,Acalypha,diversifolia,Jacq.,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+ACA2,ACALMA,Euphorbiaceae,Acalypha,macrostachya,Jacq.,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+ACAW,,Euphorbiaceae,Acalypha,wilkesiana,Müll. Arg.,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+ADET,ADE1TR,Euphorbiaceae,Adelia,triloba,(Müll. Arg.) Hemsl.,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+ALCC,ALCHCO,Euphorbiaceae,Alchornea,costaricensis,Pax & K. Hoffm.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ALCL,ALCHLA,Euphorbiaceae,Alchornea,latifolia,Sw.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CROB,CROTBI,Euphorbiaceae,Croton,billbergianus,Müll. Arg.,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+CROP,CROTDR,Euphorbiaceae,Croton,draco,Schltdl.,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+DALC,DALECI,Euphorbiaceae,Dalechampia,cissifolia,Poepp.,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+DALD,DALEDI,Euphorbiaceae,Dalechampia,dioscoreifolia,Poepp.,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+DRYS,DRYPST,Euphorbiaceae,Drypetes,standleyi,G.L. Webster,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+HYEL,HYERAL,Euphorbiaceae,Hieronyma,alchorneoides,Allemão,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+HURC,HURACR,Euphorbiaceae,Hura,crepitans,L.,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+MABO,MABEOC,Euphorbiaceae,Mabea,occidentalis,Benth.,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+MAR2,MARGNO,Euphorbiaceae,Margaritaria,nobilis,L. f.,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+OMPD,OMPHDI,Euphorbiaceae,Omphalea,diandra,L.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PERA,PERAAR,Euphorbiaceae,Pera,arborea,Mutis,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+PHYA,PHYLAC,Euphorbiaceae,Phyllanthus,acuminatus,Vahl,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+SAPS,SAPISP,Euphorbiaceae,Sapium,broadleaf,Loes.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+SAPG,SAPIAU,Euphorbiaceae,Sapium,glandulosum,(L.) Morong,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+INFA,INGARU,Fabaceae:Mimosoideae,Inga,ruiziana,G. Don,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+BAUG,BAUHGU,Fabaceae-Caesalpinioideae,Bauhinia,guianensis,Aubl.,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+BAUR,BAUHRE,Fabaceae-Caesalpinioideae,Bauhinia,reflexa,Schery,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+CYNB,CYNOBA,Fabaceae-Caesalpinioideae,Cynometra,bauhiniifolia,Benth.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+DIAG,DIALGU,Fabaceae-Caesalpinioideae,Dialium,guianense,(Aubl.) Sandwith,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+HYMC,HYMECO,Fabaceae-Caesalpinioideae,Hymenaea,courbaril,L.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+PELP,,Fabaceae-Caesalpinioideae,Peltogyne,purpurea,Pittier,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PRIC,PRI2CO,Fabaceae-Caesalpinioideae,Prioria,copaifera,Griseb.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+SCHP,SCHIPA,Fabaceae-Caesalpinioideae,Schizolobium,parahyba,(Vell.) S.F. Blake,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+SEND,SENNDA,Fabaceae-Caesalpinioideae,Senna,dariensis,(Britton & Rose) H.S. Irwin & Barneby,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+SENR,SENNRE,Fabaceae-Caesalpinioideae,Senna,reticulata,(Willd.) H.S. Irwin & Barneby,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+SENU,SENNUN,Fabaceae-Caesalpinioideae,Senna,undulata,(Benth.) H.S. Irwin & Barneby,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+TACV,TACHVE,Fabaceae-Caesalpinioideae,Tachigali,versicolor,Radlk.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ABAB,PIT1BA,Fabaceae-Mimosoideae,Abarema,barbouriana,(Standl.) Barneby & J.W. Grimes,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PITM,PIT1MA,Fabaceae-Mimosoideae,Abarema,macradenia,(Pittier) Barneby & J.W. Grimes,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+ACAA,ACACAC,Fabaceae-Mimosoideae,Acacia,acanthophylla,,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ACAH,ACACHA,Fabaceae-Mimosoideae,Acacia,hayesii,Benth.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ACA1,ACACME,Fabaceae-Mimosoideae,Acacia,melanoceras,Beurl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ACAR,ACACRI,Fabaceae-Mimosoideae,Acacia,riparia,Kunth,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+PITR,PIT1RU,Fabaceae-Mimosoideae,Cojoba,rufescens,(Benth.) Britton & Rose,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ENTM,ENTAMO,Fabaceae-Mimosoideae,Entada,monostchya,DC.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+ADEP,ADE4PO,Fabaceae-Mimosoideae,Entadopsis,polystachya,(L.) Britton,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ENTC,ENTECY,Fabaceae-Mimosoideae,Enterolobium,cyclocarpum,(Jacq.) Griseb.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+ENTS,ENTESC,Fabaceae-Mimosoideae,Enterolobium,schomburgkii,Benth.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+INAC,INGAS1,Fabaceae-Mimosoideae,Inga,acuminata,Benth.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+INGO,INGAGO,Fabaceae-Mimosoideae,Inga,goldmanii,Pittier,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+INHA,,Fabaceae-Mimosoideae,Inga,hayesii,Benth.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+INMA,INGAMA,Fabaceae-Mimosoideae,Inga,marginata,Willd.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+INM1,INGAM1,Fabaceae-Mimosoideae,Inga,mucuna,Walp. & Duchass.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+INM2,INGAM2,Fabaceae-Mimosoideae,Inga,multijuga,Benth.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+INQU,INGAQU,Fabaceae-Mimosoideae,Inga,nobilis,Willd.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+INMI,INGAMI,Fabaceae-Mimosoideae,Inga,oerstediana,Benth.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+INPA,INGAPA,Fabaceae-Mimosoideae,Inga,pauciflora,Walp. & Duchass.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+INPE,INGAPE,Fabaceae-Mimosoideae,Inga,pezizifera,Benth.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+INPU,INGAPU,Fabaceae-Mimosoideae,Inga,punctata,Willd.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+INSA,INGASA,Fabaceae-Mimosoideae,Inga,sapindoides,Willd.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+ING6,INGASE,Fabaceae-Mimosoideae,Inga,sertulifera,DC.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+INSP,INGASP,Fabaceae-Mimosoideae,Inga,spectabilis,(Vahl) Willd.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+INTH,INGATH,Fabaceae-Mimosoideae,Inga,thibaudiana,DC.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+INUM,INGAUM,Fabaceae-Mimosoideae,Inga,umbellifera,(Vahl) Steud.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+INVE,INGAVE,Fabaceae-Mimosoideae,Inga,vera,Willd.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+LEUM,,Fabaceae-Mimosoideae,Leucaena,multicapitula,Schery,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PITH,PIT1HY,Fabaceae-Mimosoideae,Pithecellobium,hymenaeifolium,(Willd.) Benth.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ALBG,ALBIGU,Fabaceae-Mimosoideae,Pseudosamanea,guachapele,(Kunth) Harms,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE
+ANDI,ANDIIN,Fabaceae-Papilionoideae,Andira,inermis,(W. Wright) DC.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+CLIJ,CLITJA,Fabaceae-Papilionoideae,Clitoria,javitensis,(Kunth) Benth.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+DALB,,Fabaceae-Papilionoideae,Dalbergia,brownei,(Jacq.) Urb.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+DALM,DALBMO,Fabaceae-Papilionoideae,Dalbergia,monetaria,L. f.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+DALR,DALBRE,Fabaceae-Papilionoideae,Dalbergia,retusa,Hemsl.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+DESA,DESMAX,Fabaceae-Papilionoideae,Desmodium,axillare,(SW.)DC.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+DESH,DESMHE,Fabaceae-Papilionoideae,Desmodium,heterocarpon,(L.) DC.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+DIOG,DIOCGU,Fabaceae-Papilionoideae,Dioclea,guianensis,Benth.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+DIOR,DIOCRE,Fabaceae-Papilionoideae,Dioclea,reflexa,Hook. f.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+DIOW,DIOCWI,Fabaceae-Papilionoideae,Dioclea,wilsonii,Standl.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+DIPP,DIPTPA,Fabaceae-Papilionoideae,Dipteryx,oleifera,Benth.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+ERYC,ERY1CO,Fabaceae-Papilionoideae,Erythrina,costaricensis,Micheli,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+FIS1,FISSFE,Fabaceae-Papilionoideae,Fissicalyx,fendleri,Benth.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+LONL,LONCLA,Fabaceae-Papilionoideae,Lonchocarpus,heptaphyllus,(Poir.) DC.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MACF,MACHFL,Fabaceae-Papilionoideae,Machaerium,floribundum,Benth.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MAC1,MACHM1,Fabaceae-Papilionoideae,Machaerium,isadelphum,(E. Mey.) Amshoff,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MACK,MACHKE,Fabaceae-Papilionoideae,Machaerium,kegelii,Meisn.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MAC2,MACHM2,Fabaceae-Papilionoideae,Machaerium,milleflorum,Pittier,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MACA,MACHAR,Fabaceae-Papilionoideae,Machaerium,pittieri,J.F. Macbr.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MACR,MACHRI,Fabaceae-Papilionoideae,Machaerium,riparium,Brandegee,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MACS,MACHSE,Fabaceae-Papilionoideae,Machaerium,seemannii,Benth. ex Seem.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MUCM,MUCUMU,Fabaceae-Papilionoideae,Mucuna,mutisiana,(Kunth) DC.,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+MYR2,MYROFR,Fabaceae-Papilionoideae,Myrospermum,frutescens,Jacq.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ORMA,ORMOAM,Fabaceae-Papilionoideae,Ormosia,amazonica,Ducke,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+ORMM,ORMOMA,Fabaceae-Papilionoideae,Ormosia,macrocalyx,Ducke,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ORMP,,Fabaceae-Papilionoideae,Ormosia,panamensis,Benth.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PLAP,PLA1PI,Fabaceae-Papilionoideae,Platymiscium,pinnatum,(Jacq.) Dugand,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+PLAE,PLA2EL,Fabaceae-Papilionoideae,Platypodium,elegans,Vogel,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+PTEO,PTEROF,Fabaceae-Papilionoideae,Pterocarpus,officinalis,Jacq.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+PTER,PTERRO,Fabaceae-Papilionoideae,Pterocarpus,rohrii,Vahl,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+RHYP,RHYCPY,Fabaceae-Papilionoideae,Rhynchosia,pyramidalis,(Lam.) Urb.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+SWAP,SWARPA,Fabaceae-Papilionoideae,Swartzia,panamensis,Benth.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+SWA1,SWARS1,Fabaceae-Papilionoideae,Swartzia,simplex,(Sw.) Spreng.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+SWA2,SWARS2,Fabaceae-Papilionoideae,Swartzia,simplex,(Sw.) Spreng.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+BANG,BANAGU,Flacourtiaceae,Banara,guianensis,Aubl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+CAS1,CASEAC,Flacourtiaceae,Casearia,aculeata,Jacq.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CAS2,CASEAR,Flacourtiaceae,Casearia,arborea,(Rich.) Urb.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CASC,CASECO,Flacourtiaceae,Casearia,commersoniana,Cambess.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CAS5,CASEC2,Flacourtiaceae,Casearia,corymbosa,Kunth,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CASG,CASEGU,Flacourtiaceae,Casearia,guianensis,(Aubl.) Urb.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CASS,CASESY,Flacourtiaceae,Casearia,sylvestris,Sw.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+HASF,HASSFL,Flacourtiaceae,Hasseltia,floribunda,Kunth,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+LACA,LACIAG,Flacourtiaceae,Lacistema,aggregatum,(P.J. Bergius) Rusby,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+LAEP,LAETPR,Flacourtiaceae,Laetia,procera,(Poepp.) Eichler,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+LAET,LAETTH,Flacourtiaceae,Laetia,thamnia,L.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+LINL,LINDLA,Flacourtiaceae,Lindackeria,laurina,C. Presl,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+LOZP,LOZAPI,Flacourtiaceae,Lozania,pittieri,(S.F. Blake) L.B. Sm.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+TETJ,TET4JO,Flacourtiaceae,Tetrathylacium,johansenii,Standl.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+XYLC,XYL2CH,Flacourtiaceae,Xylosma,chlorantha,Donn. Sm.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+XYLO,XYL2OL,Flacourtiaceae,Xylosma,oligandra,Donn. Sm.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ZUEG,ZUELGU,Flacourtiaceae,Zuelania,guidonia,(Sw.) Britton & Millsp.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+CODC,,Gesneriaceae,Codonanthe,crassifolia,(H. Focke) C.V. Morton,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+CODU,,Gesneriaceae,Codonanthe,uleana,Fritsch,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+DRSE,,Gesneriaceae,Drymonia,serrulata,(Jacq.) Mart.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+GNEL,GNETLE,Gnetaceae,Gnetum,leyboldii,Tul.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+ANTP,ANTHPA,Hippocrateaceae,Anthodon,panamense,A.C. Sm.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CUEK,CUERKA,Hippocrateaceae,Cuervea,kappleriana,(Miq.) A.C. Sm.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+HIPV,HIPPVO,Hippocrateaceae,Hippocratea,volubilis,L.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+HYLP,HYLEPR,Hippocrateaceae,Hylenaea,praecelsa,(Miers) A.C. Sm.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+PERP,PERIPR,Hippocrateaceae,Peritassa,pruinosa,(Seem.) A.C. Sm.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+PRIA,PRI1AS,Hippocrateaceae,Prionostemma,aspera,(Lam.) Miers,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TONO,TONTOV,Hippocrateaceae,Tontelea,ovalifolia,(Miers) A.C. Sm.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+HUMD,HUMIDI,Humiriaceae,Humiriastrum,diguense,(Cuatrec.) Cuatrec.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+VAND,VANTDE,Humiriaceae,Vantanea,depleta,McPherson,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+BEIP,BEILPE,Lauraceae,Beilschmiedia,pendula,(Sw.) Hemsl.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+PHOM,PHOECI,Lauraceae,Cinnamomum,triplinerve,(Ruiz & Pav.) Kosterm.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+NECC,NECTCI,Lauraceae,Nectandra,cissiflora,Nees,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+NEC2,NECTCU,Lauraceae,Nectandra,cuspidata,Nees & Mart.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+NECL,NECTGL,Lauraceae,Nectandra,lineata,(Kunth) Rohwer,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+NECP,NECTPU,Lauraceae,Nectandra,purpurea,(Ruiz & Pav.) Mez,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+NECS,,Lauraceae,Nectandra,savannarum,(Standl. & Steyerm.) C.K. Allen,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+NECU,NECTUM,Lauraceae,Nectandra,umbrosa,(Kunth) Mez,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+OCOC,OCOTCE,Lauraceae,Ocotea,cernua,(Nees) Mez,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+OCOD,OCOTDE,Lauraceae,Ocotea,dendrodaphne,Mez,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+OCOI,OCOTIR,Lauraceae,Ocotea,insularis,(Meisn.) Mez,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+OCOO,OCOTOB,Lauraceae,Ocotea,oblonga,(Meisn.) Mez,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+OCOP,OCOTPU,Lauraceae,Ocotea,puberula,Nees,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+OCOS,OCOTWH,Lauraceae,Ocotea,whitei,Woodson,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+PER1,PERSAM,Lauraceae,Persea,americana,Mill.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+COUP,COURPA,Lecythidaceae,Couratari,guianensis,Aubl.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+GRIF,GRIACA,Lecythidaceae,Grias,cauliflora,L.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+GUSF,GUSTFO,Lecythidaceae,Gustavia,fosteri,S.A. Mori,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+GUSS,GUSTSU,Lecythidaceae,Gustavia,superba,(Kunth) O. Berg,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+STRB,STRYBR,Loganiaceae,Strychnos,brachistantha,Standl.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+STRD,STRYDA,Loganiaceae,Strychnos,darienensis,Seem.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+STRP,STRYPA,Loganiaceae,Strychnos,panamensis,Seem.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+STRT,STRYTO,Loganiaceae,Strychnos,toxifera,R.H. Schomb. ex Benth.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+ORYA,ORYCAL,Loranthaceae,Oryctanthus,alveolatus,(Kunth) Kuijt,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ORYC,ORYCCO,Loranthaceae,Oryctanthus,cordifolius,(C. Presl) Urb.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ORYO,,Loranthaceae,Oryctanthus,occidentalis,(L.) Eichler,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ORYS,,Loranthaceae,Oryctanthus,spicatus,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PHTP,,Loranthaceae,Phthirusa,pyrifolia,(Kunth) Eichler,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+STRO,,Loranthaceae,Struthanthus,orbicularis,(Kunth) Blume,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+LAFP,LAFOPU,Lythraceae,Lafoensia,punicifolia,DC.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+BANC,BANICO,Malpighiaceae,Banisteriopsis,cornifolia,(Kunth) C.B. Rob.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+BANM,,Malpighiaceae,Banisteriopsis,muricata,(Cav.) Cuatrec.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+BUNC,BUNCCO,Malpighiaceae,Bunchosia,nitida,(Jacq.) DC.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+BYRC,BYRSCR,Malpighiaceae,Byrsonima,crassifolia,(L.) Kunth,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+BYRS,BYRSSP,Malpighiaceae,Byrsonima,spicata,(Cav.) DC.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+HETL,HETELA,Malpighiaceae,Heteropterys,laurifolia,(L.) A. Juss.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+HETP,HETEPA,Malpighiaceae,Heteropterys,panamensis,Cuatrec. & Croat,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+HIRF,HIRAFA,Malpighiaceae,Hiraea,faginea,(Sw.) Nied.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+HIR3,,Malpighiaceae,Hiraea,fosteri,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+HIRG,HIRAGR,Malpighiaceae,Hiraea,grandifolia,Standl. & L.O. Williams,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+HIRP,,Malpighiaceae,Hiraea,papilionacea,Cuatrec. & Croat,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+HIR1,HIRARE,Malpighiaceae,Hiraea,reclinata,Jacq.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+HIRQ,HIRAQU,Malpighiaceae,Hiraea,smilacina,Standl.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MALR,MALPRO,Malpighiaceae,Malpighia,romeroana,Cuatrec.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+MASH,MASCHI,Malpighiaceae,Mascagnia,hiraea,(Gaertn.) Fawc. & Rendle,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MASN,MASCNE,Malpighiaceae,Mascagnia,nervosa,(Kunth) Griseb.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MASO,,Malpighiaceae,Mascagnia,ovatifolia,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+SPAM,SPACME,Malpighiaceae,Spachea,membranacea,Cuatrec.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+STIE,STIGEL,Malpighiaceae,Stigmaphyllon,ellipticum,(Kunth) A. Juss.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+STIH,STIGHY,Malpighiaceae,Stigmaphyllon,hypargyreum,Triana & Planch.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+STIL,STIGLI,Malpighiaceae,Stigmaphyllon,lindenianum,A. Juss.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+STIP,STIGPU,Malpighiaceae,Stigmaphyllon,puberum,(Rich.) A. Juss.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TETD,TET3DI,Malpighiaceae,Tetrapterys,discolor,(G. Mey.) DC.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TETM,TET3MA,Malpighiaceae,Tetrapterys,goudotiana,Triana & Planch.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TETS,TET3SE,Malpighiaceae,Tetrapterys,seemannii,Triana & Planch.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+HAM2,HAMPAP,Malvaceae,Hampea,appendiculata,(Donn. Sm.) Standl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+PAVD,LOPIDA,Malvaceae,Pavonia,dasypetala,Turcz.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+URLO,URENLO,Malvaceae,Urena, lobata,,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+CALU,,Marantaceae,Calathea,lutea,Schult.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ISCP,,Marantaceae,Pleiostachya,pruinosa,(Regel) K. Schum.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MAR3,MARCNE,Marcgraviaceae,Marcgravia,nepenthoides,Seem.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+SOUS,SOURSY,Marcgraviaceae,Souroubea,sympetala,Gilg,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ADE1,ADELAD,Melastomataceae,Adelobotrys,adscendens,(Sw.) Triana,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CLI1,CLIDCA,Melastomataceae,Clidemia,capitellata,(Bonpl.) D. Don,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+CLID,CLIDDE,Melastomataceae,Clidemia,dentata,D. Don,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CLIP,CLIDDI,Melastomataceae,Clidemia,discolor,(Triana) Cogn.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+CLIO,CLIDOC,Melastomataceae,Clidemia,octona,(Bonpl.) L.O. Williams,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CLIS,CLIDSE,Melastomataceae,Clidemia,septuplinervia,Cogn.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CONB,CONOBR,Melastomataceae,Conostegia,bracteata,Triana,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CONC,CONOCI,Melastomataceae,Conostegia,cinnamomea,(Beurl.) Wurdack,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CON1,CONOSP,Melastomataceae,Conostegia,speciosa,Naudin,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+LEAD,LEANDI,Melastomataceae,Leandra,dichotoma,(D. Don) Cogn.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+MIC1,MICOAF,Melastomataceae,Miconia,affinis,DC.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+MIC2,MICOAR,Melastomataceae,Miconia,argentea,(Sw.) DC.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+MICE,MICOEL,Melastomataceae,Miconia,elata,(Sw.) DC.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+MICH,MICOHO,Melastomataceae,Miconia,hondurensis,Donn. Sm.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+MICI,MICOIM,Melastomataceae,Miconia,impetiolaris,(Sw.) D. Don ex DC.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+MIC3,MICOLA,Melastomataceae,Miconia,lacera,(Bonpl.) Naudin,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+MIC4,,Melastomataceae,Miconia,lateriflora,Cogn.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+MIC8,MICOLI,Melastomataceae,Miconia,ligulata,Almeda,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+MIC5,,Melastomataceae,Miconia,lonchophylla,Naudin,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+MICB,MICOBO,Melastomataceae,Miconia,minutiflora,(Bonpl.) DC.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+MICN,MICONE,Melastomataceae,Miconia,nervosa,(Sm.) Triana,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+MICP,MICOPR,Melastomataceae,Miconia,prasina,(Sw.) DC.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+MIC6,MICOSE,Melastomataceae,Miconia,serrulata,(DC.) Naudin,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+MIC7,,Melastomataceae,Miconia,shattuckii,Standl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+MIC9,MICOSI,Melastomataceae,Miconia,simplex,Triana,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+MOUM,MOURMY,Melastomataceae,Mouriri,myrtilloides,(Sw.) Poir.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+OSSQ,OSSAQU,Melastomataceae,Ossaea,quinquenervia,(Mill.) Almeda,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+TOPP,,Melastomataceae,Topobea,parasitica,Aubl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+CARG,CARAGU,Meliaceae,Carapa,guianensis,Aubl.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+CEDO,CEDROD,Meliaceae,Cedrela,odorata,L.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+GUA3,GUARSP,Meliaceae,Guarea,fuzzy,C. DC.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+GUA1,GUARGR,Meliaceae,Guarea,grandifolia,C. DC.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+GUA2,GUARGU,Meliaceae,Guarea,guidonia,(L.) Sleumer,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+GUAK,GUARKU,Meliaceae,Guarea,kunthiana,A. Juss.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+TRIH,TRI2HI,Meliaceae,Trichilia,hirta,L.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+TRI1,TRI2PA,Meliaceae,Trichilia,pallida,Sw.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+TRI2,TRI2PL,Meliaceae,Trichilia,pleeana,(A. Juss.) C. DC.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+TRI3,TRI2TU,Meliaceae,Trichilia,tuberculata,(Triana & Planch.) C. DC.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+ABUP,ABUTPA,Menispermaceae,Abuta,panamensis,(Standl.) Krukoff & Barneby,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+ABUR,ABUTRA,Menispermaceae,Abuta,racemosa,(Thunb.) Triana & Planch.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+CHOT,CHONTO,Menispermaceae,Chondrodendron,tomentosum,Ruiz & Pav.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CIST,,Menispermaceae,Cissampelos,tropaeolifolia,DC.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ODO1,ODO2TA,Menispermaceae,Odontocarya,tamoides,(DC.) Miers,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ODO2,ODO2TR,Menispermaceae,Odontocarya,truncata,Standl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+BROA,BROSAL,Moraceae,Brosimum,alicastrum,Sw.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+BROG,BROSGU,Moraceae,Brosimum,guianense,(Aubl.) Huber,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+BROU,BROSUT,Moraceae,Brosimum,utile,(Kunth) Pittier,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+CAS4,CASTEL,Moraceae,Castilla,elastica,Sessé ex Cerv.,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+FIP1,FICUAM,Moraceae,Ficus,americana,Aubl.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+FIBU,FICUBU,Moraceae,Ficus,bullenei,I.M. Johnst.,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+FICI,FICUCI,Moraceae,Ficus,citrifolia,Mill.,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+FIC1,FICUC1,Moraceae,Ficus,colubrinae,Standl.,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+FIC2,FICUC2,Moraceae,Ficus,costaricana,(Liebm.) Miq.,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+FIDU,FICUDU,Moraceae,Ficus,dugandii,Standl.,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+FIIN,FICUIN,Moraceae,Ficus,insipida,Willd.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+FIMA,FICUMA,Moraceae,Ficus,maxima,Mill.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+FINY,FICUNY,Moraceae,Ficus,nymphaeifolia,Mill.,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+FIOB,FICUOB,Moraceae,Ficus,obtusifolia,Kunth,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+FIPA,FICUPA,Moraceae,Ficus,paraensis,(Miq.) Miq.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+FIP2,FICUPE,Moraceae,Ficus,pertusa,L. f.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+FIPO,FICUPO,Moraceae,Ficus,popenoei,Standl.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+FITO,FICUTO,Moraceae,Ficus,tonduzii,Standl.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+FITR,FICUTR,Moraceae,Ficus,trigonata,L.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+FIYO,FICUYO,Moraceae,Ficus,yoponensis,Desv.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+CHLT,MACLTI,Moraceae,Maclura,tinctoria,(L.) D. Don. ex Steud.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+MAQC,MAQUCO,Moraceae,Maquira,guianensis,Aubl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+PERX,PEREXA,Moraceae,Perebea,xanthochyma,H. Karst.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+POUA,POULAR,Moraceae,Poulsenia,armata,(Miq.) Standl.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+PSE2,PSE2SP,Moraceae,Pseudolmedia,spuria,(Sw.) Griseb.,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+SORA,SOROAF,Moraceae,Sorocea,affinis,Hemsl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+OLMA,OLMEAS,Moraceae,Trophis,caucana,(Pittier) C.C. Berg,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+TROR,TROPRA,Moraceae,Trophis,racemosa,(L.) Urb.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+VIRE,VIROEL,Myristicaceae,Virola,elongata,(Benth.) Warb.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+VIR3,VIROSP,Myristicaceae,Virola,multiflora,(Standl.) A.C. Sm.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+VIR1,VIROSE,Myristicaceae,Virola,sebifera,Aubl.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+VIR2,VIROSU,Myristicaceae,Virola,surinamensis,(Rol. ex Rottb.) Warb.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+ARDB,ARDIBA,Myrsinaceae,Ardisia,bartlettii,Lundell,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ARDG,ARDIGU,Myrsinaceae,Ardisia,guianensis,(Aubl.) Mez,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+ARDF,ARDIFE,Myrsinaceae,Ardisia,standleyana,P.H. Allen,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+PARM,PAR2MI,Myrsinaceae,Parathesis,microcalyx,Donn. Sm.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+STYS,STYLST,Myrsinaceae,Stylogyne,turbacensis,(Kunth) Mez,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CALW,CAL1WA,Myrtaceae,Calycolpus,warszewiczianus,O. Berg,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+CALS,,Myrtaceae,Calypthranthes,4,,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+PSIA,CHA2SC,Myrtaceae,Chamguava,schippii,(Standl.) Landrum,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+EUGC,EUGECO,Myrtaceae,Eugenia,coloradoensis,Standl.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+EUGG,EUGEGA,Myrtaceae,Eugenia,galalonensis,(C. Wright ex Griseb.) Krug & Urb.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+EUGN,EUGENE,Myrtaceae,Eugenia,nesiotica,Standl.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+EUG1,EUGEOC,Myrtaceae,Eugenia,octopleura,Krug & Urb.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+EUGO,EUGEOE,Myrtaceae,Eugenia,oerstediana,O. Berg,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+EUGP,EUGEPR,Myrtaceae,Eugenia,principium,McVaugh,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+EUGU,,Myrtaceae,Eugenia,uniflora,L.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+EUGV,EUGEVE,Myrtaceae,Eugenia,venezuelensis,O. Berg,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+MYR1,MYRCFO,Myrtaceae,Myrcia,fosteri,Croat,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+MYRG,MYRCGA,Myrtaceae,Myrcia,gatunensis,Standl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+MYRZ,MYRCZE,Myrtaceae,Myrcia,zetekiana,(Standl.) B. Holst,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+PSIF,PSIDFR,Myrtaceae,Psidium,friedrichsthalianum,(O. Berg) Nied.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+PSIG,PSIDGU,Myrtaceae,Psidium,guajava,L.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+SYZM,SYZYMA,Myrtaceae,Syzygium,malaccense,(L.) Merr. & L.M. Perry,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+GUAS,GUAPST,Nyctaginaceae,Guapira,standleyana,Woodson,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+NEEA,NEEAAM,Nyctaginaceae,Neea,amplifolia,Donn. Sm.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+PISA,PISOAC,Nyctaginaceae,Pisonia,aculeata,L.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+CES1,CESPMA,Ochnaceae,Cespedesia,spathulata,(Ruiz & Pav.) Planch.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+OURL,OURALU,Ochnaceae,Ouratea,lucens,(Kunth) Engl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+HEIA,HEISAC,Olacaceae,Heisteria,acuminata,(Humb. & Bonpl.) Engl.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+HEIC,HEISCO,Olacaceae,Heisteria,concinna,Standl.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+HEIS,HEISSC,Olacaceae,Heisteria,scandens,Ducke,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+ASPP,,Orchidaceae,Aspasia,principissa,Rchb. f.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+BRAC,,Orchidaceae,Brassia,caudata,(L.) Lindl.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CATB,,Orchidaceae,Catasetum,bicolor,Klotzsch,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+DICP,,Orchidaceae,Dichaea,panamensis,Lindl.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+DIME,,Orchidaceae,Dimerandra,emarginata,(G. Mey.) Hoehne,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+EPCO,,Orchidaceae,Epidendrum,coronatum,Ruiz & Pav.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+EPDE,,Orchidaceae,Epidendrum,decipiens,Lindl.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+EPIM,,Orchidaceae,Epidendrum,flexuosum,G. Mey.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+EPRA,,Orchidaceae,Epidendrum,radicans,Pav. ex Lindl.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MASL,,Orchidaceae,Masdevallia,livingstoneana,Rchb. f.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+NOTA,,Orchidaceae,Notylia,albida,Klotzsch,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+PLE1,,Orchidaceae,Pleurothallis,verecunda,Schltr.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+SCAG,,Orchidaceae,Scaphyglottis,graminifolia,(Ruiz & Pav.) Poepp. & Endl.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+SCAL,,Orchidaceae,Scaphyglottis,longicaulis,S. Watson,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+SCAP,,Orchidaceae,Scaphyglottis,prolifera,Cogn.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+SOBP,,Orchidaceae,Sobralia,fenzliana,Rchb. f.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+SOBS,,Orchidaceae,Sobralia,suaveolens,Rchb. f.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ONCS,,Orchidaceae,Trichocentrum,nudum,(Batem. ex Lindl.) Chase & N.H. Williams,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+PAS1,PASSAM,Passifloraceae,Passiflora,ambigua,Hemsl.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+PAS2,PASSAU,Passifloraceae,Passiflora,auriculata,Kunth,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PASB,PASSBI,Passifloraceae,Passiflora,biflora,Lam.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+PASC,PASSCO,Passifloraceae,Passiflora,coriacea,Juss.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PASF,PASSFO,Passifloraceae,Passiflora,foetida,L.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PASN,PASSNI,Passifloraceae,Passiflora,nitida,Kunth,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+PASS,PASSSE,Passifloraceae,Passiflora,seemannii,Griseb.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+PASV,PASSVI,Passifloraceae,Passiflora,vitifolia,Kunth,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+TRIO,TRI5OC,Phytolaccaceae,Trichostigma,octandrum,(L.) H. Walter,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PICL,PICRLA,Picramniaceae,Picramnia,latifolia,Tul.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+PEEB,,Piperaceae,Peperomia,ebingeri,Yunck.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PEGL,,Piperaceae,Peperomia,glabella,(Sw.) A. Dietr.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PEMA,,Piperaceae,Peperomia,macrostachya,(Vahl) A. Dietr.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PEOB,,Piperaceae,Peperomia,obtusifolia,(L.) A. Dietr.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PERO,,Piperaceae,Peperomia,rotundifolia,(L.) Kunth,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PPAE,PIPEAE,Piperaceae,Piper,aequale,Vahl,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PPA1,PIPEA1,Piperaceae,Piper,arboreum,Aubl.,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PPA3,PIPEA2,Piperaceae,Piper,aristolochiaefolium,(Trel.) Yunck.,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PPAU,PIPEAU,Piperaceae,Piper,auritum,Kunth,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PPCU,PIPECU,Piperaceae,Piper,colonense,C. DC.,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PPCO,PIPECO,Piperaceae,Piper,cordulatum,C. DC.,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PPDA,PIPEDA,Piperaceae,Piper,darienense,C. DC.,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PPDI,PIPEDI,Piperaceae,Piper,dilatatum,Rich.,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PPGR,PIPEGR,Piperaceae,Piper,grande,Vahl,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PPHI,PIPEHI,Piperaceae,Piper,hispidum,Sw.,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PPIM,PIPEIM,Piperaceae,Piper,imperiale,(Miq.) C. DC.,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PPMA,PIPEMA,Piperaceae,Piper,marginatum,Jacq.,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PPPE,PIPEPE,Piperaceae,Piper,perlasense,Vahl,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PPRE,PIPERE,Piperaceae,Piper,reticulatum,L.,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PPCA,PIPECA,Piperaceae,Piper,schiedeanum,Steud.,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ANDB,,Poaceae,Andropogon,bicornis,L.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CHUS,CHUSSI,Poaceae,Chusquea,simpliciflora,Munro,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+BAMA,,Poaceae,Guadua,amplexifolia,J. Presl,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+PHAL,,Poaceae,Pharus,latifolius,L.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+PHAP,,Poaceae,Pharus,parvifolius,Nash,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+SACS,SACCSP,Poaceae,Saccharum,spontaneum,L.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+SECD,SECUDI,Polygalaceae,Securidaca,diversifolia,(L.) S.F. Blake,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+COC2,COCCA2,Polygonaceae,Coccoloba,acuminata,Kunth,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+COC3,,Polygonaceae,Coccoloba,ascendens,Duss. ex Lindau,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+COC4,COCCCA,Polygonaceae,Coccoloba,caracasana,Meisn.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+COCC,COCCCO,Polygonaceae,Coccoloba,coronata,Jacq.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+COC1,COCCJO,Polygonaceae,Coccoloba,johnstonii,R.A. Howard,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+COCM,COCCMA,Polygonaceae,Coccoloba,manzinellensis,Beurl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+COCP,COCCP1,Polygonaceae,Coccoloba,parimensis,Benth.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+TRIC,TRIPCU,Polygonaceae,Triplaris,cumingiana,Fisch. & C.A. Mey. ex C.A. Mey.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ROUM,ROUPMO,Proteaceae,Roupala,montana,Aubl.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+COLG,COLUGL,Rhamnaceae,Colubrina,glandulosa,Perkins,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+GOUA,GOUAAD,Rhamnaceae,Gouania,adenophera,Pilg.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+GOUC,GOUACO,Rhamnaceae,Gouania,colombiana,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+GOUL,GOUALU,Rhamnaceae,Gouania,lupuloides,(L.) Urb.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CAS3,CASSEL,Rhizophoraceae,Cassipourea,elliptica,(Sw.) Poir.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ALIE,ALIBED,Rubiaceae,Alibertia,edulis,(Rich.) A. Rich. ex DC.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+ALSB,ALSEBL,Rubiaceae,Alseis,blackiana,Hemsl.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+AMAC,AMAICO,Rubiaceae,Amaioua,corymbosa,Kunth,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+APPS,APPUSE,Rubiaceae,Appunia,seibertii,Standl.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+BERG,BERTGU,Rubiaceae,Bertiera,guianensis,Aubl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CALC,CAL2CA,Rubiaceae,Calycophyllum,candidissimum,(Vahl) DC.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CHIP,CHIMPA,Rubiaceae,Chimarrhis,parviflora,Standl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CHIA,CHIOAL,Rubiaceae,Chiococca,alba,(L.) Hitchc.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CHOP,CHOMPS,Rubiaceae,Chomelia,psilocarpa,Dwyer & M.V. Hayden,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+COSS,COSMGR,Rubiaceae,Cosmibuena,grandiflora,(Ruiz & Pav.) Rusby,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+COUC,COU2CU,Rubiaceae,Coussarea,curvigemmia,Dwyer,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+COUH,COUTHE,Rubiaceae,Coutarea,hexandra,(Jacq.) K. Schum.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+FARL,FARALU,Rubiaceae,Faramea,luteovirens,Standl.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+FARO,FARAOC,Rubiaceae,Faramea,occidentalis,(L.) A. Rich.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+GENA,GENIAM,Rubiaceae,Genipa,americana,L.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+GEOR,,Rubiaceae,Geophila,repens,(L.) I.M. Johnst.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+GUEF,GUETFO,Rubiaceae,Guettarda,foliacea,Standl.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+HAM1,HAMEAX,Rubiaceae,Hamelia,axillaris,Sw.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+HAMP,HAMEPA,Rubiaceae,Hamelia,patens,Jacq.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+HOFW,,Rubiaceae,Hoffmannia,longipetiolata,Pol.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+HOFE,,Rubiaceae,Hoffmannia,subauriculata,Standl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+ISEH,ISERHA,Rubiaceae,Isertia,haenkeana,DC.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+IXOC,,Rubiaceae,Ixora,coccinea,L.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+MACG,MACRGL,Rubiaceae,Macrocnemum,roseum,(Ruiz & Pav.) Wedd.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MORC,MORICI,Rubiaceae,Morinda,citrifolia,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PALG,PALIGU,Rubiaceae,Palicourea,guianensis,Aubl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+PENM,PENTMA,Rubiaceae,Pentagonia,macrophylla,Benth.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+ANTT,ANTITR,Rubiaceae,Pittoniotis,trichantha,Griseb.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+POSL,POSOLA,Rubiaceae,Posoqueria,latifolia,(Rudge) Roem. & Schult.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+PYAC,PSYCAC,Rubiaceae,Psychotria,acuminata,Benth.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYB1,PSYCB1,Rubiaceae,Psychotria,brachiata,Sw.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYC1,PSYCC1,Rubiaceae,Psychotria,capitata,Ruiz & Pav.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYC2,PSYCC2,Rubiaceae,Psychotria,carthagenensis,Jacq.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYCH,PSYCCH,Rubiaceae,Psychotria,chagrensis,Standl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYPI,PSYCPI,Rubiaceae,Psychotria,cyanococca,Seem. ex Dombrain,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYDE,PSYCDE,Rubiaceae,Psychotria,deflexa,DC.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYEL,PSYCEL,Rubiaceae,Psychotria,elata,(Sw.) Hammel,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYEM,PSYCEM,Rubiaceae,Psychotria,emetica,L. f.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYER,PSYCER,Rubiaceae,Psychotria,erecta,(Aubl.) Standl. & Steyerm.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYB2,PSYCB2,Rubiaceae,Psychotria,gracilenta,Müll. Arg.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYG1,PSYCG1,Rubiaceae,Psychotria,graciliflora,Benth.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYG3,PSYCG3,Rubiaceae,Psychotria,grandis,Sw.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYFU,PSYCFU,Rubiaceae,Psychotria,hoffmannseggiana,(Willd. ex Roem. & Schult.) Müll. Arg.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYHO,PSYCHO,Rubiaceae,Psychotria,horizontalis,Sw.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYIP,PSYCIP,Rubiaceae,Psychotria,ipecacuanha,(Brot.) Stokes,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYLI,PSYCLI,Rubiaceae,Psychotria,limonensis,K. Krause,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYMA,PSYCMA,Rubiaceae,Psychotria,marginata,Sw.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYMI,PSYCMI,Rubiaceae,Psychotria,micrantha,Kunth,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYPO,PSYCPO,Rubiaceae,Psychotria,poeppigiana,Müll. Arg.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYPS,PSYCPS,Rubiaceae,Psychotria,psychotriifolia,(Seem.) Standl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYPU,PSYCPU,Rubiaceae,Psychotria,pubescens,Sw.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYRA,PSYCRA,Rubiaceae,Psychotria,racemosa,Rich.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYSU,PSYCSU,Rubiaceae,Psychotria,suerrensis,Donn. Sm.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PYG2,PSYCG2,Rubiaceae,Psychotria,tenuifolia,Sw.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+RANA,RANDAR,Rubiaceae,Randia,armata,(Sw.) DC.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+RANF,RANDFO,Rubiaceae,Rosenbergiodendron,formosum,(Jacq.) Fagerl.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+TOCP,TOCOPI,Rubiaceae,Tocoyena,pittieri,(Standl.) Standl.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+UNCT,UNCATO,Rubiaceae,Uncaria,tomentosa,(Willd. ex Roem & Schult.) DC.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+WARC,WARSCO,Rubiaceae,Warszewiczia,coccinea,(Vahl) Klotzsch,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+ZANJ,ZANTPR,Rutaceae,Zanthoxylum,acuminatum,(Sw.) Sw.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ZANB,ZANTBE,Rutaceae,Zanthoxylum,ekmanii,(Urb.) Alain,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ZAN1,ZANTP1,Rutaceae,Zanthoxylum,panamense,P. Wilson,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ZANS,ZANTSE,Rutaceae,Zanthoxylum,setulosum,P. Wilson,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+ALLG,ALLOGE,Sapindaceae,Allophylus,gentryi,Croat,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+ALLP,ALLOPS,Sapindaceae,Allophylus,psilospermus,Radlk.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CUPC,CUPACI,Sapindaceae,Cupania,cinerea,Poepp.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CUPL,CUPALA,Sapindaceae,Cupania,latifolia,Kunth,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CUPR,CUPARU,Sapindaceae,Cupania,rufescens,Triana & Planch.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CUP2,CUPASC,Sapindaceae,Cupania,scrobiculata,Rich.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CUPS,CUPASY,Sapindaceae,Cupania,sylvatica,Seem.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+MATA,MATAAP,Sapindaceae,Matayba,apetala,(Macfad.) Radlk.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+MATS,MATASC,Sapindaceae,Matayba,scrobiculata,(Kunth) Radlk.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+PAU1,PAULBA,Sapindaceae,Paullinia,baileyi,Standl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PAU2,PAULBR,Sapindaceae,Paullinia,bracteosa,Radlk.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PAUF,PAULFI,Sapindaceae,Paullinia,fibrigera,Radlk.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PAU3,PAULFU,Sapindaceae,Paullinia,fuscescens,Kunth,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PAU4,PAULG2,Sapindaceae,Paullinia,glomerulosa,Radlk.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PAU5,PAULPI,Sapindaceae,Paullinia,pinnata,L.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PAU6,PAULPT,Sapindaceae,Paullinia,pterocarpa,Triana & Planch.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PAUR,PAULRU,Sapindaceae,Paullinia,rugosa,Benth. ex Radlk.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PAUT,PAULTU,Sapindaceae,Paullinia,turbacensis,Kunth,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+SAP2,SAP1SA,Sapindaceae,Sapindus,saponaria,L.,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+SERA,SERJAT,Sapindaceae,Serjania,atrolineata,C. Wright,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+SER1,SERJCI,Sapindaceae,Serjania,circumvallata,Radlk.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+SER2,SERJCO,Sapindaceae,Serjania,cornigera,Turcz.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+SERD,SERJDE,Sapindaceae,Serjania,decapleuria,Croat,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+SERM,SERJME,Sapindaceae,Serjania,mexicana,(L.) Willd.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+SER3,SERJPA,Sapindaceae,Serjania,paucidentata,DC.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+SER4,SERJPL,Sapindaceae,Serjania,pluvialiflorens,Croat,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+SERT,SERJTR,Sapindaceae,Serjania,trachygona,Radlk.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TALN,TALINE,Sapindaceae,Talisia,nervosa,Radlk.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+TALP,TALIPR,Sapindaceae,Talisia,princeps,Oliv.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+THIM,THINMY,Sapindaceae,Thinouia,myriantha,Triana & Planch.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+CHRA,CHR2AR,Sapotaceae,Chrysophyllum,argenteum,Jacq.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+CHRC,CHR2CA,Sapotaceae,Chrysophyllum,cainito,L.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+MANB,MANIBI,Sapotaceae,Manilkara,bidentata,(A. DC.) A. Chev.,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+POUF,POUTFO,Sapotaceae,Pouteria,fossicola,Cronquist,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+POUU,POUTRE,Sapotaceae,Pouteria,reticulata,(Engl.) Eyma,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+POU1,POUTSA,Sapotaceae,Pouteria,sapota,(Jacq.) H.E. Moore & Stearn,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+POU2,POUTST,Sapotaceae,Pouteria,stipitata,Cronquist,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+HYDP,,Saxifragaceae,Hydrangea,peruviana,Moric.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+QUA2,QUASAM,Simaroubaceae,Quassia,amara,L.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+SIMA,SIMAAM,Simaroubaceae,Simarouba,amara,Aubl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+SIPG,SIPAGU,Siparunaceae,Siparuna,guianensis,Aubl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+SIPP,SIPAPA,Siparunaceae,Siparuna,pauciflora,(Beurl.) A. DC.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+SMIL,SMILLA,Smilacaceae,Smilax,domingensis,Willd.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+SMIM,SMILMO,Smilacaceae,Smilax,mollis,Humb. & Bonpl. ex Willd.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+SMIP,SMILPA,Smilacaceae,Smilax,panamensis,Morong,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+SMI1,SMILS1,Smilacaceae,Smilax,spinosa,Mill.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+SMI2,SMILS2,Smilacaceae,Smilax,spissa,Killip & C.V. Morton,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CESL,CESTLA,Solanaceae,Cestrum,latifolium,Lam.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CES2,CESTME,Solanaceae,Cestrum,megalophyllum,Dunal,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CESR,CESTRA,Solanaceae,Cestrum,racemosum,Ruiz & Pav.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+LYCM,LYCIMA,Solanaceae,Lycianthes,maxonii,Standl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+LYCS,,Solanaceae,Lycianthes,synanthera,(Sendtn.) Bitter,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+MARU,MARKUL,Solanaceae,Markea,ulei,(Damm.) Cuatrec.,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+SOL2,SOLAAR,Solanaceae,Solanum,arboreum,Dunal,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+SOL4,SOLAAS,Solanaceae,Solanum,asperum,Rich.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+SOL5,SOLALA,Solanaceae,Solanum,aturense,Dunal,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+CYPH,CYPHHA,Solanaceae,Solanum,circinatum,Bohs,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+SOLH,SOLAHA,Solanaceae,Solanum,hayesii,Fernald,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+SOL1,,Solanaceae,Solanum,nudum,Dunal,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+SOLO,,Solanaceae,Solanum,rudepannum,Dunal,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+SOL3,SOLAST,Solanaceae,Solanum,steyermarkii,Carvalho,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+SOLS,,Solanaceae,Solanum,subinerme,Jacq.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+TURO,TURPOC,Staphyleaceae,Turpinia,occidentalis,(Sw.) G. Don,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+BYTA,BYTTAC,Sterculiaceae,Byttneria,aculeata,(Jacq.) Jacq.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+GUAU,GUAZUL,Sterculiaceae,Guazuma,ulmifolia,Lam.,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+HERP,HERRPU,Sterculiaceae,Herrania,purpurea,(Pittier) R.E. Schult.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+STEA,STERAP,Sterculiaceae,Sterculia,apetala,(Jacq.) H. Karst.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+THEB,THEOBE,Sterculiaceae,Theobroma,bernoullii,Pittier,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+THEC,THEOCA,Sterculiaceae,Theobroma,cacao,L.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+TERT,TERNTE,Theaceae,Ternstroemia,tepezapote,Schltdl. & Cham.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+APEM,APEIME,Tiliaceae,Apeiba,membranacea,Spruce ex Benth.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+APET,APEITI,Tiliaceae,Apeiba,tibourbou,Aubl.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+HELP,HELIAM,Tiliaceae,Heliocarpus,americanus,L.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+LUE1,LUEHSE,Tiliaceae,Luehea,seemannii,Triana & Planch.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+LUE2,LUEHSP,Tiliaceae,Luehea,speciosa,Willd.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+MUNC,MUNTCA,Tiliaceae,Muntingia,calabura,L.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+TRI6,TRI4GA,Tiliaceae,Trichospermum,galeottii,(Turcz.) Kosterm.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TRIF,TRIGRU,Trigoniaceae,Trigonia,rugosa,Benth.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+TURP,TURNPA,Turneraceae,Turnera,panamensis,Urb.,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+CELI,CELTIG,Ulmaceae,Celtis,iguanaea,(Jacq.) Sarg.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CELS,CELTSC,Ulmaceae,Celtis,schippii,Standl.,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+TREM,TREMMI,Ulmaceae,Trema,micrantha,(L.) Blume,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+MYRY,MYRILO,Urticaceae,Myriocarpa,longipes,Liebm.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE
+UREB,URERBA,Urticaceae,Urera,baccifera,(L.) Gaudich. ex  Wedd.,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+UREE,UREREG,Urticaceae,Urera,eggersii,Hieron.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+AEGC,AEGICE,Verbenaceae,Aegiphila,cephalophora,Standl.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+AEGE,AEGIEL,Verbenaceae,Aegiphila,elata,Sw.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+AEGP,AEGIPA,Verbenaceae,Aegiphila,panamensis,Moldenke,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+LANC,LANTCA,Verbenaceae,Lantana,camara,L.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+PETA,PETRAS,Verbenaceae,Petrea,volubilis,L.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+VITC,VITECO,Verbenaceae,Vitex,cooperi,Standl.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+HYBP,HYBAPR,Violaceae,Hybanthus,prunifolius,(Humb. & Bonpl. ex Roem. & Schult.) Schulze-Menz,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+RIN1,RINOSQ,Violaceae,Rinorea,squamata,S.F. Blake,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+RIN2,RINOSY,Violaceae,Rinorea,sylvatica,(Seem.) Kuntze,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+PHOP,,Viscaceae,Phoradendron,piperoides,(Kunth) Trel.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+CISE,CISSER,Vitaceae,Cissus,erosa,Rich.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CISP,CISSPS,Vitaceae,Cissus,fuliginea,Kunth,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CISM,CISSMI,Vitaceae,Cissus,microcarpa,Vahl,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+CISS,CISSSI,Vitaceae,Cissus,verticillata,L.,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+VITT,VITITI,Vitaceae,Vitis,tiliifolia,Humb. & Bonpl. ex Roem. & Schult.,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+VOCF,VOCHFE,Vochysiaceae,Vochysia,ferruginea,Mart.,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+RENA,,Zingiberaceae,Renealmia,alpinia,(Rottb.) Maas,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
